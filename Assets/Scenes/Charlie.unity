@@ -630,6 +630,7 @@ MonoBehaviour:
   range: 10
   fireRate: 0.2
   tip: {fileID: 1201991737}
+  muzzelFlach: {fileID: 6674308412064882718, guid: 714519d6a41dd684c91cd89ed79b1e57, type: 3}
   enemy:
     serializedVersion: 2
     m_Bits: 64
