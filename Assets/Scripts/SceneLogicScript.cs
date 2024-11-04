@@ -28,4 +28,8 @@ public class SceneLogicScript : MonoBehaviour
     {
         SceneManager.LoadScene(sceneNumber);
     }
+    public void OpenLink(string url)
+    {
+        Application.OpenURL(url);
+    }
 }
