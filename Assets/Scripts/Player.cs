@@ -28,9 +28,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        // Movement
-        TopDownMovement();
-
         // Battery
         if (usingFlashlight)
         {
@@ -51,17 +48,21 @@ public class Player : MonoBehaviour
         health = Mathf.Clamp(health, 0, maxHealth);
         if (health == 0) Die();
     }
-
+    private void FixedUpdate()
+    {
+        // Movement
+        TopDownMovement();
+    }
     public virtual void TopDownMovement()
     {
         // GET PLAYER INPUTS
-        if (rawInput) input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        else input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (rawInput) input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        else input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
-        input = Vector3.Normalize(input) * speed * 100 * Time.deltaTime;
+        Vector2 movement = input * speed;
 
         // APPLY
-        rigidbody.linearVelocity = input;
+        rigidbody.linearVelocity = movement;
     }
     public virtual void Die()
     {
