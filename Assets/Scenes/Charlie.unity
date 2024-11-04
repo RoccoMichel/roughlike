@@ -207,7 +207,8 @@ GameObject:
   - component: {fileID: 130704083}
   - component: {fileID: 130704082}
   - component: {fileID: 130704081}
-  - component: {fileID: 130704080}
+  - component: {fileID: 130704089}
+  - component: {fileID: 130704088}
   - component: {fileID: 130704087}
   - component: {fileID: 130704086}
   m_Layer: 6
@@ -217,25 +218,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &130704080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130704079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cfd10dd65e717469099c23fd6c10ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ads: {fileID: 130704082}
-  path: {fileID: 130704083}
-  player: {fileID: 228319114}
-  stoppingDistens: 2
-  Player:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!114 &130704081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +275,7 @@ MonoBehaviour:
   version: 5
   radius: 0.5
   height: 2
-  canMove: 0
+  canMove: 1
   maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
@@ -463,6 +445,46 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &130704088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130704079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43496a0b33ee3c4e81de0f6c3903ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  drops: []
+  damageTextObj: {fileID: 7750455506941791679, guid: 802c0bf139ba2e44baf3798e7150d23c, type: 3}
+  bigDamage: {r: 0.7584905, g: 0.0787112, b: 0.0787112, a: 1}
+  medeumDamage: {r: 0.7132075, g: 0.70358926, b: 0.10092549, a: 1}
+  smalDamage: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &130704089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130704079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e2177e2eac5fd4a8057f999903ce1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ads: {fileID: 130704082}
+  path: {fileID: 130704083}
+  player: {fileID: 228319114}
+  stoppingDistens: 2
+  dist: 0
+  Player:
+    serializedVersion: 2
+    m_Bits: 8
+  fireRate: 0.5
+  damage: 10
 --- !u!50 &228319111 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 67307420693684036, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
@@ -1006,6 +1028,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4506793670836646930, guid: 0cd34aabff2ea214cbee12b88a584a0c, type: 3}
+      propertyPath: showNavGraphs
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5220592023312060074, guid: 0cd34aabff2ea214cbee12b88a584a0c, type: 3}
       propertyPath: m_Name
       value: A*

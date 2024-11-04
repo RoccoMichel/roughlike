@@ -8,30 +8,23 @@ public class EnemyMovement : MonoBehaviour
     public AIPath path;
     public Transform player;
     public float stoppingDistens = 1;
+
+    [HideInInspector]
+    public float dist;
     bool canMove = true;
+    bool move = true;
 
-    public LayerMask Player;
-
-    private void Update()
+    public void Move()
     {
         if (ads.target == null) ads.target = player;
 
         //Moves the agent to the player if the distens is more then the stopping distens
-        float dist = Vector2.Distance(player.position, transform.position);
-        if (dist > stoppingDistens && canMove)
-            path.canMove = true;
-        else
-        {
-            path.canMove = false;
+        //and if its not in the flashlight
+        dist = Vector2.Distance(player.position, transform.position);
 
-            //Shoting
-            Vector3 dir = -(transform.position - player.position).normalized;
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 10, Player);
-            if(hit)
-            {
-                //Shoot
-            }
-        }
+        move = dist > stoppingDistens && canMove;
+
+        path.canMove = move;
     }
 
     private void OnTriggerStay2D(Collider2D collision)

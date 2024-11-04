@@ -20,7 +20,7 @@ public class Gun : MonoBehaviour
 
             if (hit)
             {
-                //Do damage
+                hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
             }
 
             hasFired = true;
