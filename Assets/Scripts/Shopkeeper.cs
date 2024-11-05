@@ -19,6 +19,7 @@ public class Shopkeeper : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("Player") != null)
             currentPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        jubs = PlayerPrefs.GetFloat("jubs", 0);
         RefreshValues();
     }
     public void UpgradeButton()
@@ -41,7 +42,7 @@ public class Shopkeeper : MonoBehaviour
     }
     public void Leave()
     {
-        Destroy(gameObject);
+        Destroy(gameObject);   
     }
     public void RefreshValues()
     {

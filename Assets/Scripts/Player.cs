@@ -74,4 +74,16 @@ public class Player : MonoBehaviour
     {
         health -= amount;
     }
+    public void Heal(float amount)
+    {
+        health += amount;
+    }
+    public void HealFull()
+    {
+        health = maxHealth;
+    }
+    public void HealthUpgrade()
+    {
+        maxHealth += 10;
+    }
 }
