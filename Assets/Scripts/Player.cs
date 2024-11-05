@@ -5,9 +5,10 @@ public class Player : MonoBehaviour
     [Header("Variables")]
     public float health;
     public float maxHealth;
-    public float currency;
+    [Range(0, 100)]
     public float battery;
     public float batteryDrainRate;
+    public float dekurenzi;
 
     [Header("Status")]
     public bool usingFlashlight;
