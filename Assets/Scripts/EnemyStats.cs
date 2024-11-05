@@ -29,7 +29,7 @@ public class EnemyStats : MonoBehaviour
         health -= damage;
 
         //Spawns in the damage text at a random position around the enemy
-        Vector2 spawnPos = new Vector2(transform.position.x + Random.Range(-0.5f, 0.5f), transform.position.y + Random.Range(-0.5f, 0.5f));
+        Vector3 spawnPos = new Vector3(transform.position.x + Random.Range(-0.5f, 0.5f), transform.position.y + Random.Range(-0.5f, 0.5f), -1);
         GameObject obj = Instantiate(damageTextObj, spawnPos, Quaternion.identity);
         damageText = obj.GetComponent<TMP_Text>();
         damageText.text = "-" + damage;

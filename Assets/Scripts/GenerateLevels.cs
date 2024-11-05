@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class LevelGenerator : MonoBehaviour
+public class GenerateLevels : MonoBehaviour
 {
+    public bool generateLevel;
+
     enum gridSpace { empty, floor, wall };
     gridSpace[,] grid;
     int roomHeight, roomWidth;
@@ -22,7 +25,28 @@ public class LevelGenerator : MonoBehaviour
     public GameObject wallObj, floorObj;
 
     public Transform ground, wall;
-    void Start()
+
+    private void OnValidate()
+    {
+        if (generateLevel)
+        {
+            Transform f = new GameObject().transform;
+            f.name = "Floors";
+            f.parent = transform;
+            ground = f;
+
+            Transform w = new GameObject().transform;
+            w.name = "Walls";
+            w.parent = transform;
+            wall = w;
+
+            Generate();
+
+            generateLevel = false;
+        }
+    }
+
+    void Generate()
     {
         Setup();
         CreateFloors();
