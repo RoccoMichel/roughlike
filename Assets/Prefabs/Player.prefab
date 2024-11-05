@@ -211,6 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammo: 100
   damage: 10
+  baseDamage: 0
   range: 10
   fireRate: 0.2
   tip: {fileID: 7850622565477812158}
@@ -218,6 +219,10 @@ MonoBehaviour:
   enemy:
     serializedVersion: 2
     m_Bits: 64
+  create:
+    serializedVersion: 2
+    m_Bits: 0
+  p: {fileID: 0}
   shoot: 323
 --- !u!1 &3507981962710998348
 GameObject:
@@ -577,14 +582,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  currency: 1e+10
   battery: 100
-  batteryDrainRate: 0
-  usingFlashlight: 0
+  batteryDrainRate: 8
+  dekurenzi: 0
+  usingFlashlight: 1
+  damage: 0
   rawInput: 1
   speed: 4
   input: {x: 0, y: 0}
   FlashlightKey: 102
+  knockback: 10
+  reach: 1
+  punchKey: 0
+  crate:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &6642040138892602348
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class Shopkeeper : MonoBehaviour
     [Header("Values")]
     public float dekurenzi;
     public float jubs; // PlayerPref
+    float playerSpeed;
 
     [Header("References")]
     public Player currentPlayer;
@@ -14,13 +15,20 @@ public class Shopkeeper : MonoBehaviour
     public GameObject gemTab;
     public TMP_Text dekurenziDisplay;
     public TMP_Text jubDisplay;
+    GameObject playerUI;
 
     private void Start()
     {
-        if (GameObject.FindGameObjectWithTag("Player") != null)
-            currentPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        if (GameObject.FindWithTag("Player UI") != null) playerUI = GameObject.FindWithTag("Player UI");
+        if (GameObject.FindWithTag("Player") != null)
+            currentPlayer = GameObject.FindWithTag("Player").GetComponent<Player>();
         jubs = PlayerPrefs.GetFloat("jubs", 0);
+
+        playerSpeed = currentPlayer.speed;
+
+        Leave();
         RefreshValues();
+        UpgradeButton();
     }
     public void UpgradeButton()
     {
@@ -40,16 +48,27 @@ public class Shopkeeper : MonoBehaviour
         equipmentTab.SetActive(false);
         gemTab.SetActive(true);
     }
+    public void Enter()
+    {
+        playerUI.SetActive(false);
+        GetComponent<Canvas>().enabled = true;
+        playerSpeed = currentPlayer.speed;
+        currentPlayer.speed = 0;
+        // Animation?
+    }
     public void Leave()
     {
-        Destroy(gameObject);   
+        playerUI.SetActive(true);
+        GetComponent<Canvas>().enabled = false;
+        currentPlayer.speed = playerSpeed;
+        // Animation?
     }
     public void RefreshValues()
     {
-        dekurenzi = currentPlayer.dekurenzi;
+        if (currentPlayer != null) dekurenzi = currentPlayer.dekurenzi;
         jubs = PlayerPrefs.GetFloat("jubs", 0);
 
+        dekurenziDisplay.text = $"DEKURENZI: {dekurenzi}";
         jubDisplay.text = $"JUBS: {jubs}";
-        dekurenziDisplay.text = $"DEKURENZI: {dekurenziDisplay}";
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyStop
   - Wall
+  - Player UI
   layers:
   - Default
   - TransparentFX

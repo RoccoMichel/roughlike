@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     public float knockback = 10;
     public float reach = 1;
     public KeyCode punchKey;
-    public LayerMask crete;
+    public LayerMask crate;
 
     private void Start()
     {
@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
             Vector3 dir = -(transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition).normalized);
             dir.z = 0;
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, reach, crete);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, reach, crate);
 
             Debug.DrawRay(transform.position, dir * 100, Color.red);
             Debug.Break();

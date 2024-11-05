@@ -2,20 +2,29 @@ using UnityEngine;
 
 public class PauseMenuManagerScript : MonoBehaviour
 {
-    public Canvas pauseMenu;
+    public GameObject pauseMenu;
     [SerializeField] KeyCode pauseKey;
 
     void Update()
     {
-        if (pauseMenu.gameObject.activeInHierarchy == true && Input.GetKeyDown(pauseKey))
+        if (pauseMenu.activeInHierarchy == true && Input.GetKeyDown(pauseKey))
         {
-            pauseMenu.gameObject.SetActive(false);
-            Time.timeScale = 1;
+            Resume();
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            pauseMenu.gameObject.SetActive(true);
-            Time.timeScale = 0;
+            Pause();
         }
+    }
+
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0;
     }
 }
