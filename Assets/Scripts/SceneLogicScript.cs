@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLogicScript : MonoBehaviour
 {
+    [SerializeField] public Canvas pauseMenu;
     public void LoadSceneByName(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -31,5 +32,11 @@ public class SceneLogicScript : MonoBehaviour
     public void OpenLink(string url)
     {
         Application.OpenURL(url);
+    }
+
+    public void Resume()
+    {
+        pauseMenu.gameObject.SetActive(false);
+        Time.timeScale = 1;
     }
 }
