@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
 
     [Header("Status")]
     public bool usingFlashlight;
+    public float damage;
 
     [Header("Movement")]
     public bool rawInput;
@@ -21,6 +23,12 @@ public class Player : MonoBehaviour
     [Header("References")]
     [SerializeField] KeyCode FlashlightKey;
     Rigidbody2D rigidbody;
+
+    [Header("Punch")]
+    public float knockback = 10;
+    public float reach = 1;
+    public KeyCode punchKey;
+    public LayerMask crete;
 
     private void Start()
     {
@@ -53,6 +61,8 @@ public class Player : MonoBehaviour
     {
         // Movement
         TopDownMovement();
+
+        Punch();
     }
     public virtual void TopDownMovement()
     {
@@ -64,6 +74,27 @@ public class Player : MonoBehaviour
 
         // APPLY
         rigidbody.linearVelocity = movement;
+    }
+
+    public void Punch()
+    {
+        if (Input.GetKeyDown(punchKey))
+        {
+            Vector3 dir = -(transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition).normalized);
+            dir.z = 0;
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, reach, crete);
+
+            Debug.DrawRay(transform.position, dir * 100, Color.red);
+            Debug.Break();
+
+            if (hit)
+            {
+                hit.transform.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                hit.transform.GetComponent<Rigidbody2D>().AddForce(dir * knockback);
+                hit.transform.GetComponent<Crate>().hit = true;
+            }
+        }
     }
     public virtual void Die()
     {
