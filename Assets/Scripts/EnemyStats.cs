@@ -19,7 +19,7 @@ public class EnemyStats : MonoBehaviour
     {
         if(health <= 0)
         {
-            Instantiate(drops[Random.Range(0, drops.Count)], transform.position, Quaternion.identity);
+            //Instantiate(drops[Random.Range(0, drops.Count)], transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

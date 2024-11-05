@@ -16,6 +16,8 @@ public class EnemyMovement : MonoBehaviour
 
     public void Move()
     {
+        if (player == null) player = GameObject.FindGameObjectWithTag("Player").transform;
+
         if (ads.target == null) ads.target = player;
 
         //Moves the agent to the player if the distens is more then the stopping distens
@@ -32,6 +34,8 @@ public class EnemyMovement : MonoBehaviour
         if(collision.gameObject.tag == "EnemyStop")
         {
             canMove = false;
+
+            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         }
     }
 
