@@ -15,9 +15,7 @@ public class Crate : MonoBehaviour
     {
         if(health <= 0)
         {
-            //Instantiate(drops[Random.Range(0, drops.Count)]);
-
-            print("YIIIIIPI!");
+            Instantiate(drops[Random.Range(0, drops.Count)]);
 
             Destroy(gameObject);
         }
