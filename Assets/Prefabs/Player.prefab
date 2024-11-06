@@ -185,7 +185,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 9
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -216,13 +216,14 @@ MonoBehaviour:
   fireRate: 0.2
   tip: {fileID: 7850622565477812158}
   muzzelFlach: {fileID: 6674308412064882718, guid: 714519d6a41dd684c91cd89ed79b1e57, type: 3}
+  p: {fileID: 4718775176971862752}
   enemy:
     serializedVersion: 2
     m_Bits: 64
   create:
     serializedVersion: 2
-    m_Bits: 0
-  p: {fileID: 0}
+    m_Bits: 128
+  setDamageOnStart: 1
   shoot: 323
 --- !u!1 &3507981962710998348
 GameObject:
@@ -591,12 +592,12 @@ MonoBehaviour:
   speed: 4
   input: {x: 0, y: 0}
   FlashlightKey: 102
-  knockback: 10
-  reach: 1
-  punchKey: 0
+  knockback: 1000
+  reach: 10
+  punchKey: 101
   crate:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!212 &6642040138892602348
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    [Header("Settings")]
     public int ammo;
     [HideInInspector]
     public float damage;
@@ -11,18 +12,27 @@ public class Gun : MonoBehaviour
     public float fireRate;
     bool hasFired = false;
 
+    [Header("References")]
     public Transform tip;
     public GameObject muzzelFlach;
+    public Player p;
 
+    [Header("Leayermasks")]
     public LayerMask enemy;
     public LayerMask create;
 
-    public Player p;
+    [Header("Debuging")]
+    public bool setDamageOnStart;
 
     //Runes when you switch wepons
-    public void ChechDamage()
+    public void ChekcDamage()
     {
         damage = baseDamage + p.damage;
+    }
+
+    private void Awake()
+    {
+        if (setDamageOnStart) ChekcDamage();
     }
 
     public void Shoot()
@@ -47,7 +57,7 @@ public class Gun : MonoBehaviour
 
             if (hit2)
             {
-                hit.transform.gameObject.GetComponent<Crate>().health = 0;
+                hit2.transform.gameObject.GetComponent<Crate>().health = 0;
             }
 
             hasFired = true;

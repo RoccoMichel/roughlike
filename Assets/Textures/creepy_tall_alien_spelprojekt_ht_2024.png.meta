@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      creepy_tall_alien_spelprojekt_ht_2024_0: 706111612208644827
+      creepy_tall_alien_spelprojekt_ht_2024_1: -7899681747226035742
+      creepy_tall_alien_spelprojekt_ht_2024_2: -7329014325721287503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
