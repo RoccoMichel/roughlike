@@ -6,7 +6,6 @@ public class Shopkeeper : MonoBehaviour
     [Header("Values")]
     public float dekurenzi;
     public float jubs; // PlayerPref
-    float playerSpeed;
 
     [Header("References")]
     public Player currentPlayer;
@@ -23,8 +22,6 @@ public class Shopkeeper : MonoBehaviour
         if (GameObject.FindWithTag("Player") != null)
             currentPlayer = GameObject.FindWithTag("Player").GetComponent<Player>();
         jubs = PlayerPrefs.GetFloat("jubs", 0);
-
-        playerSpeed = currentPlayer.speed;
 
         Leave();
         RefreshValues();
@@ -50,18 +47,16 @@ public class Shopkeeper : MonoBehaviour
     }
     public void Enter()
     {
+        Time.timeScale = 0;
         playerUI.SetActive(false);
         GetComponent<Canvas>().enabled = true;
-        playerSpeed = currentPlayer.speed;
         currentPlayer.speed = 0;
-        // Animation?
     }
     public void Leave()
     {
+        Time.timeScale = 1;
         playerUI.SetActive(true);
         GetComponent<Canvas>().enabled = false;
-        currentPlayer.speed = playerSpeed;
-        // Animation?
     }
     public void RefreshValues()
     {

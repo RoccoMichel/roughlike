@@ -15,19 +15,28 @@ public class SceneLogicScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-    public void RestartGame()
+    public void LoadSceneByNumber(int sceneNumber)
+    {
+        SceneManager.LoadScene(sceneNumber);
+    }
+    public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void LoadSceneByPlayerPrefInt(string tag)
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt(tag));
+    }
+    public void LoadSceneByPlayerPrefString(string tag)
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetString(tag));
     }
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Quit");
     }
-    public void LoadSceneByNumber(int sceneNumber)
-    {
-        SceneManager.LoadScene(sceneNumber);
-    }
+
     public void OpenLink(string url)
     {
         Application.OpenURL(url);

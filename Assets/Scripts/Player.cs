@@ -1,5 +1,6 @@
 using UnityEngine;
-using UnityEngine.Rendering.Universal; // for: Light2D
+using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement; // for: Light2D
 
 public class Player : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         if (rigidbody == null) rigidbody = GetComponent<Rigidbody2D>();
+        health = maxHealth;
     }
 
     private void Update()
@@ -99,14 +101,20 @@ public class Player : MonoBehaviour
             }
         }
     }
-    public virtual void Die()
+    public void Die()
     {
         Debug.LogWarning("You died");
-        // Do Stuff
+
+        PlayerPrefs.SetInt("death", SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("DEATH");
     }
-    public virtual void TakeDamage(float amount)
+    public void TakeDamage(float amount)
     {
         health -= amount;
+
+        // Blood Effect
+        if (Camera.main.GetComponent<CameraEffects>() != null)
+            Camera.main.GetComponent<CameraEffects>().BloodOnScreen(Mathf.CeilToInt(amount / 10));
     }
     public void Heal(float amount)
     {

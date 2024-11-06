@@ -36,6 +36,7 @@ public class CanvasManager : MonoBehaviour
 
         // Inventory
 
+
     }
 
     public void RefreshValues()
