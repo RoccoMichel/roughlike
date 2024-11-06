@@ -5584,10 +5584,10 @@ MonoBehaviour:
   currency: 1
   player: {fileID: 0}
   shopkeeper: {fileID: 5089712116971853122}
-  button: {fileID: 0}
-  priceText: {fileID: 0}
-  countText: {fileID: 0}
-  nameText: {fileID: 0}
+  button: {fileID: 4866416099857317764}
+  priceText: {fileID: 8162241057129172678}
+  countText: {fileID: 4804491540389396564}
+  nameText: {fileID: 1736738603878189393}
 --- !u!222 &5754576483246129831
 CanvasRenderer:
   m_ObjectHideFlags: 0

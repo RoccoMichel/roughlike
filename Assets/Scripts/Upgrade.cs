@@ -55,16 +55,17 @@ public class Upgrade : MonoBehaviour
 
     public void RefreshValues()
     {
-        priceText.text = $"${price}";
         countText.text = $"{count}x";
 
         if (currency == PriceTypes.dekurenzi)
         {
+            priceText.text = $"${price}";
             if (player.dekurenzi >= price) button.interactable = true;
             else button.interactable = false;
         }
         else if (currency == PriceTypes.jubs)
         {
+            priceText.text = $"@{price}";
             if (PlayerPrefs.GetFloat("jubs", 0) >= price) button.interactable = true;
             else button.interactable = false;
         }
