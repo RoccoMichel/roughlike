@@ -614,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv:
-  - {fileID: 0}
+  - {fileID: 1889542821934997002}
   gunsAmmo: 
   maxAmmo: 
   unlocked: 

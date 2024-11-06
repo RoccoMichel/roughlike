@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class EndScrean : MonoBehaviour
 {
-    public GameObject trollScrean;
-    public GameObject normalScrean;
+    public GameObject trollScreen;
+    public GameObject normalScreen;
 
     public TMP_Text jubsText;
 
@@ -15,28 +15,28 @@ public class EndScrean : MonoBehaviour
 
     private void Start()
     {
-        trolled = PlayerPrefs.GetInt("trolled");
+        trolled = PlayerPrefs.GetInt("trolled", 0);
 
         if (trolled != 1)
-            trollScrean.SetActive(true);
+            trollScreen.SetActive(true);
         else
-            normalScrean.SetActive(true);
+            normalScreen.SetActive(true);
 
         int jubsGain = Random.Range(20, 50);
-        jubsText.text = "You Got " + jubsGain + " Jubs";
+        jubsText.text = "Jubs gained: +" + jubsGain;
 
         PlayerPrefs.SetFloat("jubs", PlayerPrefs.GetFloat("jubs") + jubsGain);
     }
 
     public void Troll()
     {
-        trolled = PlayerPrefs.GetInt("trolled");
+        trolled = PlayerPrefs.GetInt("trolled", 0);
 
         if (trolled == 0)
             PlayerPrefs.SetInt("trolled", 1);
 
-        trollScrean.SetActive(false);
-        normalScrean.SetActive(true);
+        trollScreen.SetActive(false);
+        normalScreen.SetActive(true);
     }
 
     private void OnValidate()
@@ -45,7 +45,7 @@ public class EndScrean : MonoBehaviour
         {
             PlayerPrefs.SetInt("trolled", 0);
 
-            print("Reseted");
+            print("Reset");
 
             reset = false;
         }

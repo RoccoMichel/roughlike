@@ -35,6 +35,7 @@ public class CanvasManager : MonoBehaviour
         jubsDisplay.text = $"@{PlayerPrefs.GetFloat("jubs", 0)}";
 
         // Inventory
+
     }
 
     public void RefreshValues()

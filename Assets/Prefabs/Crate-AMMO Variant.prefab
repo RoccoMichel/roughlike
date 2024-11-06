@@ -49,6 +49,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2993989935979078676, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2993989935979078676, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
       propertyPath: 'drops.Array.data[0]'
       value: 
       objectReference: {fileID: 5514711277278642811, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
