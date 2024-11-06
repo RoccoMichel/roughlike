@@ -15,14 +15,16 @@ public class Crate : MonoBehaviour
     {
         if(health <= 0)
         {
-            Instantiate(drops[Random.Range(0, drops.Count)]);
+            //Instantiate(drops[Random.Range(0, drops.Count)]);
+
+            print("YIIIIIPI!");
 
             Destroy(gameObject);
         }
 
         if (hit)
         {
-            time += 1;
+            time += Time.deltaTime;
             if (time >= puchTime)
             {
                 hit = false;

@@ -56,14 +56,15 @@ public class Player : MonoBehaviour
         // Health
         health = Mathf.Clamp(health, 0, maxHealth);
         if (health == 0) Die();
+
+        Punch();
     }
     private void FixedUpdate()
     {
         // Movement
         TopDownMovement();
-
-        Punch();
     }
+
     public virtual void TopDownMovement()
     {
         // GET PLAYER INPUTS
@@ -80,13 +81,13 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(punchKey))
         {
-            Vector3 dir = -(transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition).normalized);
+            Vector3 dir = -(transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition)).normalized;
             dir.z = 0;
 
             RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, reach, crate);
 
-            Debug.DrawRay(transform.position, dir * 100, Color.red);
-            Debug.Break();
+            //Debug.DrawRay(transform.position, dir * 100, Color.red);
+            //Debug.Break();
 
             if (hit)
             {
