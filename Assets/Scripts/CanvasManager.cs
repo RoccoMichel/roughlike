@@ -34,6 +34,7 @@ public class CanvasManager : MonoBehaviour
         dekurenziDisplay.text = $"${playerScript.dekurenzi}";
         jubsDisplay.text = $"@{PlayerPrefs.GetFloat("jubs", 0)}";
 
+        // Inventory
     }
 
     public void RefreshValues()

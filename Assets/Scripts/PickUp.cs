@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class PickUp : MonoBehaviour
 {
@@ -11,38 +12,53 @@ public class PickUp : MonoBehaviour
         int choice = Random.Range(0, 100);
 
         Player player = collision.GetComponent<Player>();
+        GameObject info = Instantiate(infoText, transform.position, Quaternion.identity);
+        info.GetComponent<DamgeText>().lifeSpan = 5;
 
         switch (type)
         {
             case Types.ammo:
                 player.gameObject.GetComponent<Inventory>().RefillAmmoRandom();
+                info.GetComponent<TMP_Text>().text = "+Ammo";
                 Destroy(gameObject);
                 break;
 
             case Types.health:
-               
+                int amount;
 
-                if (choice > 65) player.Heal(10);
-                else if (choice > 30) player.Heal(20);
-                else if (choice > 5) player.Heal(30);
-                else player.Heal(50);
+                if (choice > 65) amount = 10;
+                else if (choice > 30) amount = 20;
+                else if (choice > 5) amount = 30;
+                else amount = 50;
+
+                info.GetComponent<TMP_Text>().text = $"+{amount} HP";
+                player.Heal(amount);
                 Destroy(gameObject);
                 break;
 
             case Types.dekurenzi:
+                int amountDekurenzi;
 
-                if (choice > 65) player.dekurenzi += 250;
-                else if (choice > 30) player.dekurenzi += 500;
-                else if (choice > 5) player.dekurenzi += 1000;
-                else player.dekurenzi += 2000;
+                if (choice > 65) amountDekurenzi = 250;
+                else if (choice > 30) amountDekurenzi = 500;
+                else if (choice > 5) amountDekurenzi = 1000;
+                else amountDekurenzi = 2000;
+
+                info.GetComponent<TMP_Text>().text = $"+{amountDekurenzi}$";
+                player.dekurenzi += amountDekurenzi;
                 Destroy(gameObject);
                 break;
 
             case Types.jubs:
-                PlayerPrefs.SetFloat("jubs", PlayerPrefs.GetFloat("jubs", 0) + Random.Range(1, 5));
+                int amountJubs = Random.Range(1, 5);
+                PlayerPrefs.SetFloat("jubs", PlayerPrefs.GetFloat("jubs", 0) + amountJubs);
+
+                info.GetComponent<TMP_Text>().text = $"+{amountJubs}@";                
                 Destroy(gameObject);
                 break;
+
             case Types.items:
+
                 break;
 
         }

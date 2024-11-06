@@ -178,33 +178,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7733859159391410142, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1665356933}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
---- !u!1 &1665356927 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7733859159391410142, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-  m_PrefabInstance: {fileID: 10524536}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1665356933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665356927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50615c726e703949ae3abcdbe21aa9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inv:
-  - {fileID: 2054673152}
-  gunsAmmo: 
-  maxAmmo: 
-  unlocked: 
 --- !u!1001 &1914030655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266,11 +241,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b87d84dceca1949b8a253953e9fd32, type: 3}
---- !u!1 &2054673152 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1889542821934997002, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-  m_PrefabInstance: {fileID: 10524536}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4455322731550197922
 PrefabInstance:
   m_ObjectHideFlags: 0
