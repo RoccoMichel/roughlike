@@ -68,7 +68,7 @@ public class Shopkeeper : MonoBehaviour
         if (currentPlayer != null) dekurenzi = currentPlayer.dekurenzi;
         jubs = PlayerPrefs.GetFloat("jubs", 0);
 
-        dekurenziDisplay.text = $"DEKURENZI: {dekurenzi}";
-        jubDisplay.text = $"JUBS: {jubs}";
+        dekurenziDisplay.text = $"DEKURENZI: ${dekurenzi}";
+        jubDisplay.text = $"JUBS: @{jubs}";
     }
 }

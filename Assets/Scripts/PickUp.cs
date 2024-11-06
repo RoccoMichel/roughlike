@@ -1,10 +1,10 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
     [SerializeField] Types type;
-    enum Types { ammo, health, dekunrenzi, jubs, items}
+    [SerializeField] GameObject infoText;
+    enum Types { ammo, health, dekurenzi, jubs, items}
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
@@ -15,7 +15,7 @@ public class PickUp : MonoBehaviour
         switch (type)
         {
             case Types.ammo:
-                // Inventory Method, when charlie is done
+                player.gameObject.GetComponent<Inventory>().RefillAmmoRandom();
                 Destroy(gameObject);
                 break;
 
@@ -29,7 +29,7 @@ public class PickUp : MonoBehaviour
                 Destroy(gameObject);
                 break;
 
-            case Types.dekunrenzi:
+            case Types.dekurenzi:
 
                 if (choice > 65) player.dekurenzi += 250;
                 else if (choice > 30) player.dekurenzi += 500;

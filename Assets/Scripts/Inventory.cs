@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour
     public List<bool> unlocked;
 
     int slot;
-    int curentSlot = 0;
+    int currentSlot = 0;
 
     private void Start()
     {
@@ -42,14 +42,14 @@ public class Inventory : MonoBehaviour
 
         CheckSlot();
 
-        if (curentSlot != slot)
+        if (currentSlot != slot)
         {
-            SwitchWepon();
-            curentSlot = slot;
+            SwitchWeapon();
+            currentSlot = slot;
         }
     }
 
-    void SwitchWepon()
+    void SwitchWeapon()
     {
         while (!unlocked[slot])
         {
@@ -57,8 +57,8 @@ public class Inventory : MonoBehaviour
             CheckSlot();
         }
 
-        gunsAmmo[curentSlot] = inv[curentSlot].GetComponent<Gun>().ammo;
-        inv[curentSlot].SetActive(false);
+        gunsAmmo[currentSlot] = inv[currentSlot].GetComponent<Gun>().ammo;
+        inv[currentSlot].SetActive(false);
 
         inv[slot].SetActive(true);
         inv[slot].GetComponent<Gun>().ammo = gunsAmmo[slot];

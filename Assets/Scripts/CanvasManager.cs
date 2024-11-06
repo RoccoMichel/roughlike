@@ -7,6 +7,8 @@ public class CanvasManager : MonoBehaviour
     [Header("References")]
     public Player playerScript;
     public TMP_Text healthText;
+    public TMP_Text dekurenziDisplay;
+    public TMP_Text jubsDisplay;
     public Slider healthBar;
     public Slider batteryBar;
 
@@ -20,7 +22,6 @@ public class CanvasManager : MonoBehaviour
     private void Update()
     {
         // BATTRY UI
-
         batteryBar.value = playerScript.battery;
 
         // HEALTH UI
@@ -28,6 +29,11 @@ public class CanvasManager : MonoBehaviour
             (float)System.Math.Round(playerScript.health, 1) : Mathf.Round(playerScript.health);
         healthText.text = $"{health}/{playerScript.maxHealth} HP";
         healthBar.value = playerScript.health;
+
+        // Currency Display
+        dekurenziDisplay.text = $"${playerScript.dekurenzi}";
+        jubsDisplay.text = $"@{PlayerPrefs.GetFloat("jubs", 0)}";
+
     }
 
     public void RefreshValues()

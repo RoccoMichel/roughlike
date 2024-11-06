@@ -16,7 +16,9 @@ public class DamgeText : MonoBehaviour
         if (time >= lifeSpan)
             Destroy(gameObject);
 
-        doAni = time >= 0.2f;
+        doAni = time >= lifeSpan/2;
+
+        if (text == null) return;
 
         transform.position += new Vector3(0, 0.01f, 0);
 

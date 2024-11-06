@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5113770519154280154}
   - component: {fileID: 617408903504299709}
+  - component: {fileID: 3847558821783447191}
   - component: {fileID: 2170505317306892953}
   - component: {fileID: 1652744538679769704}
   - component: {fileID: 6627492627047574722}
@@ -52,6 +53,21 @@ MonoBehaviour:
   minMoveDistance: 2
   distance: 0
   target: {fileID: 0}
+--- !u!114 &3847558821783447191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5082009840015813380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d79535924373148b3f35c348361c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BloodObject: {fileID: 4548085786542034622, guid: 821c3f60ecd5c7c4ab02298b1a832c84, type: 3}
+  bloodSprites:
+  - {fileID: 8866722518315721709, guid: 1f143b13bc75d604c8aae141579c7dd2, type: 3}
 --- !u!20 &2170505317306892953
 Camera:
   m_ObjectHideFlags: 0

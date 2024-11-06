@@ -1,5 +1,5 @@
-using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Rendering.Universal; // for: Light2D
 
 public class Player : MonoBehaviour
 {
@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
 
     [Header("References")]
     [SerializeField] KeyCode FlashlightKey;
+    [SerializeField] Light2D FlashLight;
     Rigidbody2D rigidbody;
 
     [Header("Punch")]
@@ -48,8 +49,9 @@ public class Player : MonoBehaviour
         else
         {
             if (Input.GetKeyDown(FlashlightKey) && battery > 10) usingFlashlight = true;
-            battery += Time.deltaTime * batteryDrainRate * 5;
+            battery += Time.deltaTime * batteryDrainRate * 2;
         }
+        FlashLight.enabled = usingFlashlight;
 
         battery = Mathf.Clamp(battery, 0, 100);
 
