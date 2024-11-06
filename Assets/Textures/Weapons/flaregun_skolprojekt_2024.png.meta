@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flaregun_skolprojekt_2024_0: 6275352901590492658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

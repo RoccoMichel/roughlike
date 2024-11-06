@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lazer_Gun_0: -3125492890470995368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

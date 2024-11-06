@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      smoke_bomb_skolprojekt_2024_0: 7715777626038354296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

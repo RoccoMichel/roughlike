@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      background_skolprojekt_ht_2024_0: -6866670859221761687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
