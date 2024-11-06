@@ -118,4 +118,16 @@ public class Player : MonoBehaviour
     {
         maxHealth += 10;
     }
+    public void DamageUpgrade()
+    {
+        damage += 10;
+    }
+    public void BatteryUpgrade()
+    {
+        batteryDrainRate = Mathf.Clamp(batteryDrainRate, 0.1f, int.MaxValue);
+    }
+    public void SpeedUpgrade()
+    {
+        speed += 0.2f;
+    }
 }

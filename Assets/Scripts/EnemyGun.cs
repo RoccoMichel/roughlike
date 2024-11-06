@@ -11,9 +11,17 @@ public class EnemyGun : EnemyMovement
     bool hasFired;
     bool canShoot;
 
+    [Header("Sprits")]
+    public Sprite front;
+    public Sprite back;
+    public Sprite side;
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(canMove)
+            Rotate();
+
         Move();
 
         canShoot = dist <= stoppingDistens;
@@ -35,6 +43,37 @@ public class EnemyGun : EnemyMovement
 
             hasFired = true;
             StartCoroutine(SetHasFiredToFalse());
+        }
+    }
+
+    void Rotate()
+    {
+        //Facing left
+        if (path.desiredVelocity.x < 0 && Mathf.Abs(path.desiredVelocity.y) < 0.5f)
+        {
+            sr.sprite = side;
+            sr.flipX = true;
+        }
+
+        //Facing right
+        if (path.desiredVelocity.x > 0 && Mathf.Abs(path.desiredVelocity.y) < 0.5f)
+        {
+            sr.sprite = side;
+            sr.flipX = false;
+        }
+
+        //Facing up
+        if (path.desiredVelocity.y > 0.5f)
+        {
+            sr.sprite = back;
+            sr.flipX = false;
+        }
+
+        //Facing down
+        if (path.desiredVelocity.y < -0.5f)
+        {
+            sr.sprite = front;
+            sr.flipX = false;
         }
     }
 
