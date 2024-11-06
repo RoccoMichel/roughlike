@@ -5,8 +5,10 @@ public class PurchaseItem : MonoBehaviour
 {
     [Header("Type")]
     public Purchases type;
-    public enum Purchases { HealthUpgrade, HealthFull, AmmoFull,
-    DamageUpgrade, Piercing, ReloadSpeed, BatteryLife, Grenade, SmokeBomb, SuperBoost, Flare, PistolGun, SniperGun, RevolverGun, UziGun, ARGun
+    public enum Purchases { HealthUpgrade, HealthFull, AmmoFull, DamageUpgrade,
+        Piercing, ReloadSpeed, BatteryLife, Grenade, SmokeBomb,
+        Flare, PistolGun, SniperGun, RevolverGun, UziGun, ARGun,
+        SpeedUpgrade, LuckUpgrade, BiggerFlashlight, MoreEnemies, LessEnemies, SuperBoost
     }
 
     [Header("References (can be empty)")]
@@ -35,6 +37,13 @@ public class PurchaseItem : MonoBehaviour
                 player.HealthUpgrade(); break;
             case Purchases.HealthFull:
                 player.HealFull(); break;
+            case Purchases.DamageUpgrade:
+                player.DamageUpgrade(); break;
+            case Purchases.BatteryLife:
+                player.BatteryUpgrade(); break;
+            case Purchases.SpeedUpgrade:
+                player.SpeedUpgrade(); break;
+
 
             // Equipment
             case Purchases.AmmoFull:
