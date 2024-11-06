@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 706111612208644827, guid: 25f527e46817e8e4ab933834076dffcb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: NaN
@@ -194,12 +194,18 @@ MonoBehaviour:
   path: {fileID: 2334474915368798542}
   player: {fileID: 0}
   stoppingDistens: 2
+  sr: {fileID: 3093856780171948611}
+  funnyLitleGuy: {fileID: -2069659261706076374, guid: 315aea223b706b14a9bb5f9416d76ef6, type: 3}
   dist: 0
+  canMove: 1
   Player:
     serializedVersion: 2
     m_Bits: 8
   fireRate: 0.5
   damage: 10
+  front: {fileID: 706111612208644827, guid: 25f527e46817e8e4ab933834076dffcb, type: 3}
+  back: {fileID: -7329014325721287503, guid: 25f527e46817e8e4ab933834076dffcb, type: 3}
+  side: {fileID: -7899681747226035742, guid: 25f527e46817e8e4ab933834076dffcb, type: 3}
 --- !u!114 &3944587380231372103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +262,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.03, y: 5.99}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

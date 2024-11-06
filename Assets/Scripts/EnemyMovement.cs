@@ -9,9 +9,13 @@ public class EnemyMovement : MonoBehaviour
     public Transform player;
     public float stoppingDistens = 1;
 
+    [Header("Sprite")]
+    public SpriteRenderer sr;
+    public Sprite funnyLitleGuy;
+
     [HideInInspector]
     public float dist;
-    bool canMove = true;
+    public bool canMove = true;
     bool move = true;
 
     public void Move()
@@ -36,6 +40,9 @@ public class EnemyMovement : MonoBehaviour
             canMove = false;
 
             GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+
+            sr.sprite = funnyLitleGuy;
+            sr.flipX = false;
         }
     }
 
