@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d1336b770d9a7e5469f16a0b8e00d082
+guid: b13ddfab34ab66742834e57555d35c0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6866670859221761687
-    second: background_skolprojekt_ht_2024_0
+      213: 6275352901590492658
+    second: flaregun_skolprojekt_2024_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_skolprojekt_ht_2024_0
+      name: flaregun_skolprojekt_2024_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 279
+        y: 269
+        width: 503
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9618f861c3fa4b0a0800000000000000
-      internalID: -6866670859221761687
+      spriteID: 2f5a48b3738861750800000000000000
+      internalID: 6275352901590492658
       vertices: []
       indices: 
       edges: []

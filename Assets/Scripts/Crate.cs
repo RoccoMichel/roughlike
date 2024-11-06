@@ -15,7 +15,7 @@ public class Crate : MonoBehaviour
     {
         if(health <= 0)
         {
-            Instantiate(drops[Random.Range(0, drops.Count)]);
+            Instantiate(drops[Random.Range(0, drops.Count)], transform.position, Quaternion.identity);
 
             Destroy(gameObject);
         }
@@ -39,6 +39,6 @@ public class Crate : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Wall" && hit)
-            health -= 1;
+            health -= 10;
     }
 }

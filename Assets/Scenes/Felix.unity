@@ -244,6 +244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 8007354417475792106, guid: 837dc1e35827c604b96c05fb1f822379, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 8824350700618349729, guid: 837dc1e35827c604b96c05fb1f822379, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4570289
@@ -585,7 +589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2057783311875262813, guid: ae11eb4ff1455d644ad7d08b313dd6fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: 2.87
       objectReference: {fileID: 0}
     - target: {fileID: 2057783311875262813, guid: ae11eb4ff1455d644ad7d08b313dd6fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -622,6 +626,14 @@ PrefabInstance:
     - target: {fileID: 3172207549081387437, guid: ae11eb4ff1455d644ad7d08b313dd6fe, type: 3}
       propertyPath: m_Name
       value: Crate-HEALTH Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530162929367872265, guid: ae11eb4ff1455d644ad7d08b313dd6fe, type: 3}
+      propertyPath: hit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3530162929367872265, guid: ae11eb4ff1455d644ad7d08b313dd6fe, type: 3}
+      propertyPath: health
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

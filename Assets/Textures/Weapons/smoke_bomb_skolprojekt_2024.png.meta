@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d1336b770d9a7e5469f16a0b8e00d082
+guid: 8365bf8e66a383146b9425ce7fbf9bcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6866670859221761687
-    second: background_skolprojekt_ht_2024_0
+      213: 7715777626038354296
+    second: smoke_bomb_skolprojekt_2024_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_skolprojekt_ht_2024_0
+      name: smoke_bomb_skolprojekt_2024_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 334
+        y: 240
+        width: 357
+        height: 683
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9618f861c3fa4b0a0800000000000000
-      internalID: -6866670859221761687
+      spriteID: 8714ce5fed2f31b60800000000000000
+      internalID: 7715777626038354296
       vertices: []
       indices: 
       edges: []
