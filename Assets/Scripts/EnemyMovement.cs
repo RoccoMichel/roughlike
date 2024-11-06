@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     public AIPath path;
     public Transform player;
     public float stoppingDistens = 1;
+    public float maxDistens = 30;
 
     [Header("Sprite")]
     public SpriteRenderer sr;
@@ -28,7 +29,7 @@ public class EnemyMovement : MonoBehaviour
         //and if its not in the flashlight
         dist = Vector2.Distance(player.position, transform.position);
 
-        move = dist > stoppingDistens && canMove;
+        move = dist > stoppingDistens && dist < maxDistens && canMove;
 
         path.canMove = move;
     }
