@@ -10,6 +10,7 @@ public class Gun : MonoBehaviour
     public float baseDamage;
     public float range;
     public float fireRate;
+    public int maxAmmo;
     bool hasFired = false;
 
     [Header("References")]
@@ -63,6 +64,11 @@ public class Gun : MonoBehaviour
             hasFired = true;
             StartCoroutine(SetHasFiredToFalse());
         }
+    }
+
+    public void RefilAmmo()
+    {
+        ammo = maxAmmo;
     }
 
     public IEnumerator SetHasFiredToFalse()
