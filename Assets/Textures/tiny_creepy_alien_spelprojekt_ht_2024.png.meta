@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tiny_creepy_alien_spelprojekt_ht_2024_0: -8007765978922194425
+      tiny_creepy_alien_spelprojekt_ht_2024_1: 2496389361759210665
+      tiny_creepy_alien_spelprojekt_ht_2024_2: -2635157444028275505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

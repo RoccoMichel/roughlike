@@ -5,7 +5,9 @@ public class PurchaseItem : MonoBehaviour
 {
     [Header("Type")]
     public Purchases type;
-    public enum Purchases { HealthUpgrade, HealthFull, AmmoFull}
+    public enum Purchases { HealthUpgrade, HealthFull, AmmoFull,
+    DamageUpgrade, Piercing, ReloadSpeed, BatteryLife, Grenade, SmokeBomb, SuperBoost, Flare, PistolGun, SniperGun, RevolverGun, UziGun, ARGun
+    }
 
     [Header("References (can be empty)")]
     [SerializeField] Player player;
