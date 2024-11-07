@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.69587827
       objectReference: {fileID: 0}
+    - target: {fileID: 3717785146898506415, guid: 3fd7609f0ae95944d9f5cc65e69db2ad, type: 3}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8036872445957431562, guid: 3fd7609f0ae95944d9f5cc65e69db2ad, type: 3}
       propertyPath: m_Name
       value: Pickup-AMMO Variant
