@@ -1,14 +1,19 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PillerSpawner : MonoBehaviour
 {
     public float minPlayerDist = 5;
     public float spawnFrequency = 5;
+    public float maxSpawnDist;
     float time;
     public float numberOfEnemySpawning = 2;
 
     public List<GameObject> enemys;
+    List<Vector3> positions = new List<Vector3>();
+    Tilemap tm;
 
     Transform player;
 
@@ -21,6 +26,29 @@ public class PillerSpawner : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        for (int x = tm.cellBounds.xMin; x < tm.cellBounds.xMax; x++)
+        {
+            for (int y = tm.cellBounds.yMin; y < tm.cellBounds.yMax; y++)
+            {
+                Vector3Int localLocation = new Vector3Int(
+                    x: x,
+                    y: y,
+                    z: 0);
+
+                Vector3 location = tm.CellToWorld(localLocation) + new Vector3(2.5f, 2.5f, 0);
+                if (tm.HasTile(localLocation))
+                {
+                    positions.Add(location);
+                }
+            }
+        }
+
+        for(int i = 0; i < positions.Count; i++)
+        {
+            if (Vector2.Distance(positions[i], transform.position) > maxSpawnDist)
+                positions.Remove(positions[i]);
+        }
     }
 
     private void FixedUpdate()
@@ -46,7 +74,8 @@ public class PillerSpawner : MonoBehaviour
         {
             for(int i = 0; i < spawnFrequency; i++)
             {
-                Vector2 pos = new Vector2(transform.position.x + Random.Range(-5, 5), transform.position.y + Random.Range(-5, 5));
+                Vector2 pos = positions[Random.Range(0, positions.Count)];
+
                 Instantiate(enemys[Random.Range(0, enemys.Count)], pos, Quaternion.identity);
 
                 LineRenderer lr = Instantiate(lrPrefab).GetComponent<LineRenderer>();
