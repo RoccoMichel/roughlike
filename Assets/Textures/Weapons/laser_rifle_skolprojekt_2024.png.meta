@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laser_rifle_skolprojekt_2024_0: -3329663388145728593
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

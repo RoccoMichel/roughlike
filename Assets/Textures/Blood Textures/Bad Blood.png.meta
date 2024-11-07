@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bad Blood_0: 8866722518315721709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
