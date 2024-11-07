@@ -60,6 +60,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate-AMMO Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9219515842658330327, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.68490565
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219515842658330327, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.68490565
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219515842658330327, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
