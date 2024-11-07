@@ -108,6 +108,7 @@ MonoBehaviour:
   enemys:
   - {fileID: 896797613083381243, guid: fd51db03c94966e4985bdb650eb1e0d5, type: 3}
   - {fileID: 140069869517885734, guid: 26d9eaa2bbee6a649b9391c3cc8aaeea, type: 3}
+  - {fileID: 1657268200981382843, guid: 759b2d213ad734a4bbe77dfe5a2a8ce1, type: 3}
   lrPrefab: {fileID: 4820251481719842072, guid: 5b861283edc639e43b0ab3cb2f86a84a, type: 3}
   debug: 0
   seeDistens: 0

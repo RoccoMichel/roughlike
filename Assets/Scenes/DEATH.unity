@@ -650,6 +650,7 @@ GameObject:
   - component: {fileID: 674732026}
   - component: {fileID: 674732028}
   - component: {fileID: 674732027}
+  - component: {fileID: 674732029}
   m_Layer: 5
   m_Name: Death Text
   m_TagString: Untagged
@@ -696,7 +697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You died, but the horrors never end
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -775,6 +776,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674732025}
   m_CullTransparentMesh: 1
+--- !u!114 &674732029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674732025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c606087ae66473e4fa2ea0146d19a8b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plashTexts:
+  - You died, but the horrors never end
+  - You died, but the horrors never end
+  - You died, but the horrors never end
+  - You died, but the horrors never end
+  - You died, but the horrors never end
+  - You died, but the horrors never end
+  - You died, but the horrors never end
+  - You died, but the horrors never end
+  - Skill Issue
 --- !u!1 &1028851043
 GameObject:
   m_ObjectHideFlags: 0
