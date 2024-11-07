@@ -54,7 +54,19 @@ PrefabInstance:
       objectReference: {fileID: 5800190920129044471, guid: 7f14f4f0bc50a6f4893ec0e509eccf11, type: 3}
     - target: {fileID: 3851862416108738224, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
       propertyPath: m_Name
-      value: Crate Variant
+      value: Crate-Jubs Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219515842658330327, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.99404657
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219515842658330327, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40566033
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219515842658330327, guid: e452368ce7dd52a4785c44c8d483baa2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

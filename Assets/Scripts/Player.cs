@@ -13,7 +13,10 @@ public class Player : MonoBehaviour
 
     [Header("Status")]
     public bool usingFlashlight;
+    public float flashLightSize;
     public float damage;
+    public int piercing;
+    public float fireRate;
 
     [Header("Movement")]
     public bool rawInput;
@@ -35,6 +38,13 @@ public class Player : MonoBehaviour
     {
         if (rigidbody == null) rigidbody = GetComponent<Rigidbody2D>();
         health = maxHealth;
+
+        // Apply Jubs Upgrades:
+        speed = PlayerPrefs.GetFloat("jubsSpeed", speed);
+        flashLightSize = PlayerPrefs.GetFloat("jubsFlash", flashLightSize);
+
+        FlashLight.transform.localScale = new Vector3(flashLightSize, flashLightSize, flashLightSize);
+
     }
 
     private void Update()
@@ -135,8 +145,23 @@ public class Player : MonoBehaviour
     {
         batteryDrainRate = Mathf.Clamp(batteryDrainRate, 0.1f, int.MaxValue);
     }
+    public void PiercingUpgrade()
+    {
+        piercing++;
+    }
+    public void FireRateUpgrade()
+    {
+        fireRate *= 0.8f;
+    }
     public void SpeedUpgrade()
     {
-        speed += 0.2f;
+        PlayerPrefs.SetFloat("jubsSpeed", PlayerPrefs.GetFloat("jubsSpeed", speed) + 0.5f);
+        speed = PlayerPrefs.GetFloat("jubsSpeed");
+    }
+    public void FlashLightSizeUpgrade()
+    {
+        PlayerPrefs.SetFloat("jubsFlash", PlayerPrefs.GetFloat("jubsFlash", flashLightSize) + 0.1f);
+        flashLightSize = PlayerPrefs.GetFloat("jubsFlash");
+        FlashLight.transform.localScale = new Vector3(flashLightSize, flashLightSize, flashLightSize);
     }
 }

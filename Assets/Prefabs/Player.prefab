@@ -1040,7 +1040,10 @@ MonoBehaviour:
   batteryDrainRate: 8
   dekurenzi: 0
   usingFlashlight: 1
+  flashLightSize: 2
   damage: 10
+  piercing: 0
+  fireRate: 0
   rawInput: 1
   speed: 4
   input: {x: 0, y: 0}
