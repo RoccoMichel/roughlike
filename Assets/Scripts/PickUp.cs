@@ -7,7 +7,7 @@ public class PickUp : MonoBehaviour
     [SerializeField] GameObject infoText;
 
     public bool enemyDrop;
-    enum Types { ammo, health, dekurenzi, jubs, items}
+    enum Types { ammo, health, dekurenzi, jubs}
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
@@ -33,13 +33,15 @@ public class PickUp : MonoBehaviour
                 else if (choice > 5) amount = 30;
                 else amount = 50;
 
+                amount *= 1 + (PlayerPrefs.GetInt("jubsLuck", 0) / 10);
+
                 info.GetComponent<TMP_Text>().text = $"+{amount} HP";
                 player.Heal(amount);
                 Destroy(gameObject);
                 break;
 
             case Types.dekurenzi:
-                int amountDekurenzi = 0;
+                int amountDekurenzi;
 
                 if (enemyDrop)
                 {
@@ -56,6 +58,8 @@ public class PickUp : MonoBehaviour
                     else amountDekurenzi = 2000;
                 }
 
+                amountDekurenzi *= 1 + (PlayerPrefs.GetInt("jubsLuck", 0) / 10);
+
                 info.GetComponent<TMP_Text>().text = $"+{amountDekurenzi}$";
                 player.dekurenzi += amountDekurenzi;
                 Destroy(gameObject);
@@ -63,16 +67,13 @@ public class PickUp : MonoBehaviour
 
             case Types.jubs:
                 int amountJubs = Random.Range(1, 5);
+                amountJubs += (PlayerPrefs.GetInt("jubsLuck", 0));
+
                 PlayerPrefs.SetFloat("jubs", PlayerPrefs.GetFloat("jubs", 0) + amountJubs);
 
                 info.GetComponent<TMP_Text>().text = $"+{amountJubs}@";                
                 Destroy(gameObject);
                 break;
-
-            case Types.items:
-
-                break;
-
         }
     }
 }

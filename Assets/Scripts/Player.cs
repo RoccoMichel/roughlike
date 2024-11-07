@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public float flashLightSize;
     public float damage;
     public int piercing;
+    public int luck;
     public float fireRate;
 
     [Header("Movement")]
@@ -41,10 +42,10 @@ public class Player : MonoBehaviour
 
         // Apply Jubs Upgrades:
         speed = PlayerPrefs.GetFloat("jubsSpeed", speed);
+        luck = PlayerPrefs.GetInt("jubsLuck", luck);
         flashLightSize = PlayerPrefs.GetFloat("jubsFlash", flashLightSize);
 
         FlashLight.transform.localScale = new Vector3(flashLightSize, flashLightSize, flashLightSize);
-
     }
 
     private void Update()
@@ -133,6 +134,7 @@ public class Player : MonoBehaviour
     {
         health = maxHealth;
     }
+    // Upgrades
     public void HealthUpgrade()
     {
         maxHealth += 10;
@@ -153,15 +155,29 @@ public class Player : MonoBehaviour
     {
         fireRate *= 0.8f;
     }
+    // Jubs Upgrades
     public void SpeedUpgrade()
     {
         PlayerPrefs.SetFloat("jubsSpeed", PlayerPrefs.GetFloat("jubsSpeed", speed) + 0.5f);
         speed = PlayerPrefs.GetFloat("jubsSpeed");
+    }    
+    public void LuckUpgrade()
+    {
+        PlayerPrefs.SetInt("jubsLuck", PlayerPrefs.GetInt("jubsLuck", luck) + 1);
+        luck = PlayerPrefs.GetInt("jubsLuck");
     }
     public void FlashLightSizeUpgrade()
     {
         PlayerPrefs.SetFloat("jubsFlash", PlayerPrefs.GetFloat("jubsFlash", flashLightSize) + 0.1f);
         flashLightSize = PlayerPrefs.GetFloat("jubsFlash");
         FlashLight.transform.localScale = new Vector3(flashLightSize, flashLightSize, flashLightSize);
+    }
+    public void IncreaseEnemiesUpgrade()
+    {
+        PlayerPrefs.SetFloat("jubsEnemies", PlayerPrefs.GetFloat("jubsEnemies", 20) + 1.5f);
+    }
+    public void DecreaseEnemiesUpgrade()
+    {
+        PlayerPrefs.SetFloat("jubsEnemies", PlayerPrefs.GetFloat("jubsEnemies", 20) - 1.5f);
     }
 }

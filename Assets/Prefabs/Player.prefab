@@ -447,6 +447,7 @@ MonoBehaviour:
   flashLightSize: 2
   damage: 10
   piercing: 0
+  luck: 0
   fireRate: 0
   rawInput: 1
   speed: 4

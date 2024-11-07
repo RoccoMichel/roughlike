@@ -8,7 +8,7 @@ public class PurchaseItem : MonoBehaviour
     public enum Purchases { HealthUpgrade, HealthFull, AmmoFull, DamageUpgrade,
         Piercing, ReloadSpeed, BatteryLife, /*Upgrades*/
         Grenade, SmokeBomb, Flare, PistolGun, SniperGun, RevolverGun, UziGun, ARGun, /*Equipment*/
-        SpeedUpgrade, LuckUpgrade, BiggerFlashlight, MoreEnemies, LessEnemies, SuperBoost /*Jubs Upgrades*/
+        SpeedUpgrade, LuckUpgrade, BiggerFlashlight, MoreEnemies, LessEnemies /*Jubs Upgrades*/
     }
 
     [Header("References (should be empty)")]
@@ -20,8 +20,7 @@ public class PurchaseItem : MonoBehaviour
         player = FindFirstObjectByType<Player>();
         inventory = FindFirstObjectByType<Inventory>();
 
-        Button button = GetComponent<Button>();
-        if (button == null) return;
+        if (!TryGetComponent<Button>(out var button)) return;
         
         button.onClick.AddListener(Purchase);
     }
@@ -50,35 +49,33 @@ public class PurchaseItem : MonoBehaviour
             case Purchases.AmmoFull:
                 inventory.RefillAllAmmo(); break;
             case Purchases.Grenade:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
             case Purchases.SmokeBomb:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
             case Purchases.Flare:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
             case Purchases.PistolGun:
                 inventory.UnlockGun(0); break; //
             case Purchases.SniperGun:
-                inventory.UnlockGun(0); break; //
+                inventory.UnlockGun(5); break; //
             case Purchases.RevolverGun:
                 inventory.UnlockGun(0); break; //
             case Purchases.UziGun:
-                inventory.UnlockGun(0); break; //
+                inventory.UnlockGun(2); break; //
             case Purchases.ARGun:
-                inventory.UnlockGun(0); break; //
+                inventory.UnlockGun(1); break; //
 
             // Jubs
             case Purchases.SpeedUpgrade:
                 player.SpeedUpgrade(); break;
             case Purchases.LuckUpgrade:
-                /*MISSING*/ break;
+                player.LuckUpgrade(); break;
             case Purchases.BiggerFlashlight:
                 player.FlashLightSizeUpgrade(); break;
             case Purchases.MoreEnemies:
-                /*MISSING*/ break;
+                player.IncreaseEnemiesUpgrade(); break; // Variable isn't used anywhere YET
             case Purchases.LessEnemies:
-                /*MISSING*/ break;
-            case Purchases.SuperBoost:
-                /*MISSING*/ break;
+                player.IncreaseEnemiesUpgrade(); break; // Variable isn't used anywhere YET
         }
     }
 }
