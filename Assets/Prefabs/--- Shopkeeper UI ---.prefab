@@ -823,7 +823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pay2Win
+  m_text: Premium
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 1084881624573321515}
   m_Layer: 5
   m_Name: Smoke Bomb
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1724,7 +1724,7 @@ GameObject:
   - component: {fileID: 6524907002964692950}
   m_Layer: 5
   m_Name: Flare
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2336,7 +2336,7 @@ GameObject:
   - component: {fileID: 7321060138601941672}
   m_Layer: 5
   m_Name: Assault Rifle
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2847,7 +2847,7 @@ GameObject:
   - component: {fileID: 5173379373988386565}
   m_Layer: 5
   m_Name: Speed
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3011,7 +3011,7 @@ GameObject:
   - component: {fileID: 6175009954353851295}
   m_Layer: 5
   m_Name: 'Damage Upgrade '
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3158,31 +3158,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4861507694144465602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1650991073583690470}
-        m_TargetAssemblyTypeName: PurchaseItem, Assembly-CSharp
-        m_MethodName: Purchase
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5089712116971853122}
-        m_TargetAssemblyTypeName: Shopkeeper, Assembly-CSharp
-        m_MethodName: RefreshValues
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1028154669645369421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,7 +3386,7 @@ GameObject:
   - component: {fileID: 1068012575077259413}
   m_Layer: 5
   m_Name: Full Health
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3846,7 +3822,7 @@ GameObject:
   - component: {fileID: 7889877446264842068}
   m_Layer: 5
   m_Name: Super Boost
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4661,7 +4637,7 @@ GameObject:
   - component: {fileID: 8635748634288378540}
   m_Layer: 5
   m_Name: Button 1
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5555,7 +5531,7 @@ GameObject:
   - component: {fileID: 4866416099857317764}
   m_Layer: 5
   m_Name: Less enemies
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6393,7 +6369,7 @@ GameObject:
   - component: {fileID: 2603061977216258573}
   m_Layer: 5
   m_Name: Full Ammo
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6928,7 +6904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Get upgrades for yourself or you tools
+  m_text: Get upgrades for yourself or your tools
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -8288,7 +8264,7 @@ GameObject:
   - component: {fileID: 3516148144468574026}
   m_Layer: 5
   m_Name: Battery
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9291,7 +9267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use Jubs to unlock crazy Upgrades that will last inbetween sessions
+  m_text: Crazy Upgrades that will last inbetween sessions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -9318,7 +9294,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.9
+  m_fontSize: 19
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9958,7 +9934,7 @@ GameObject:
   - component: {fileID: 4578738139175133843}
   m_Layer: 5
   m_Name: Grenade
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11000,7 +10976,7 @@ GameObject:
   - component: {fileID: 6126837857969245065}
   m_Layer: 5
   m_Name: More enemies
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11436,7 +11412,7 @@ GameObject:
   - component: {fileID: 6473939092070265380}
   m_Layer: 5
   m_Name: Revolver
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11982,7 +11958,7 @@ GameObject:
   - component: {fileID: 2398064413384334951}
   m_Layer: 5
   m_Name: Firerate
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12490,7 +12466,7 @@ GameObject:
   - component: {fileID: 3020338940526399816}
   m_Layer: 5
   m_Name: Piercing
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13331,7 +13307,7 @@ GameObject:
   - component: {fileID: 2019509219414464918}
   m_Layer: 5
   m_Name: Health Upgrade
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13934,7 +13910,7 @@ GameObject:
   - component: {fileID: 7928202474853588261}
   m_Layer: 5
   m_Name: Bigger Flashlight
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15398,7 +15374,7 @@ GameObject:
   - component: {fileID: 2346785412100316951}
   m_Layer: 5
   m_Name: Luck
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16304,7 +16280,7 @@ GameObject:
   - component: {fileID: 1571460678223577866}
   m_Layer: 5
   m_Name: Sniper
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17302,7 +17278,7 @@ GameObject:
   - component: {fileID: 3322365530145325674}
   m_Layer: 5
   m_Name: Uzi
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 public class Shopkeeper : MonoBehaviour
 {
@@ -32,18 +33,21 @@ public class Shopkeeper : MonoBehaviour
         upgradeTab.SetActive(true);
         equipmentTab.SetActive(false);
         gemTab.SetActive(false);
+        RefreshValues();
     }
     public void EquipmentButton()
     {
         upgradeTab.SetActive(false);
         equipmentTab.SetActive(true);
         gemTab.SetActive(false);
+        RefreshValues();
     }
     public void GemButton()
     {
         upgradeTab.SetActive(false);
         equipmentTab.SetActive(false);
         gemTab.SetActive(true);
+        RefreshValues();
     }
     public void Enter()
     {
@@ -65,5 +69,8 @@ public class Shopkeeper : MonoBehaviour
 
         dekurenziDisplay.text = $"DEKURENZI: ${dekurenzi}";
         jubDisplay.text = $"JUBS: @{jubs}";
+
+        foreach (GameObject upgrade in GameObject.FindGameObjectsWithTag("Upgrade"))
+            upgrade.GetComponent<Upgrade>().RefreshValues();
     }
 }

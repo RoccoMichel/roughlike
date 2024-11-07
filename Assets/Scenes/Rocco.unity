@@ -1302,6 +1302,14 @@ PrefabInstance:
       propertyPath: batteryDrainRate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5688961399628363317, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d5a616395ff32c4a8cbfb20685620ac, type: 3}
+    - target: {fileID: 5688961399628363317, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6646502828447409749, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1

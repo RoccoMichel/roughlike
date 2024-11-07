@@ -37,11 +37,6 @@ public class Upgrade : MonoBehaviour
         RefreshValues();
     }
 
-    private void FixedUpdate()
-    {
-        RefreshValues();
-    }
-
     public void Purchase()
     {
         if (currency == PriceTypes.jubs) PlayerPrefs.SetFloat("jubs", shopkeeper.jubs -= price);
