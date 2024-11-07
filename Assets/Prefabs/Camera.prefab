@@ -67,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BloodObject: {fileID: 4548085786542034622, guid: 821c3f60ecd5c7c4ab02298b1a832c84, type: 3}
   bloodSprites:
-  - {fileID: 8866722518315721709, guid: 1f143b13bc75d604c8aae141579c7dd2, type: 3}
+  - {fileID: 21300000, guid: b9e3fad26757b704cae49d85b133a973, type: 3}
 --- !u!20 &2170505317306892953
 Camera:
   m_ObjectHideFlags: 0

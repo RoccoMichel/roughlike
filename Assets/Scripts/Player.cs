@@ -76,6 +76,8 @@ public class Player : MonoBehaviour
     {
         // Movement
         TopDownMovement();
+
+        TakeDamage(10); // DELETE LATER
     }
 
     public virtual void TopDownMovement()
