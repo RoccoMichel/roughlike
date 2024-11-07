@@ -13,6 +13,8 @@ public class Inventory : MonoBehaviour
     int slot;
     public int currentSlot = 0;
 
+    bool scrolled;
+
     private void Start()
     {
         for (int i = 0; i < inv.Count; i++)
@@ -39,7 +41,7 @@ public class Inventory : MonoBehaviour
     {
         slot -= (int)(Input.GetAxisRaw("Mouse ScrollWheel") * 10);
 
-        NumberInput();
+        KeybordInput();
 
         CheckSlot();
 
@@ -54,7 +56,7 @@ public class Inventory : MonoBehaviour
     {
         while (!unlocked[slot])
         {
-            slot += (int)(Input.GetAxisRaw("Mouse ScrollWheel") * 10);
+            slot -= scrolled ? -1 : (int)(Input.GetAxisRaw("Mouse ScrollWheel") * 10);
             CheckSlot();
         }
 
@@ -64,6 +66,8 @@ public class Inventory : MonoBehaviour
         inv[slot].SetActive(true);
         inv[slot].GetComponent<Gun>().ammo = gunsAmmo[slot];
         inv[slot].GetComponent<Gun>().CheckDamage();
+
+        scrolled = false;
     }
 
     void CheckSlot()
@@ -102,47 +106,22 @@ public class Inventory : MonoBehaviour
         if (gunsAmmo[refill] > maxAmmo[refill])
             gunsAmmo[refill] = maxAmmo[refill];
     }
-    void NumberInput()
+
+    void KeybordInput()
     {
-        int desiredSlot = -1;
-        if (Input.GetKeyDown(KeyCode.Alpha1) && inv.Count >= 1) desiredSlot = 0;
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && inv.Count >= 2) desiredSlot = 1;
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && inv.Count >= 3) desiredSlot = 2;
-        else if (Input.GetKeyDown(KeyCode.Alpha4) && inv.Count >= 4) desiredSlot = 3;
-        else if (Input.GetKeyDown(KeyCode.Alpha5) && inv.Count >= 5) desiredSlot = 4;
-        else if (Input.GetKeyDown(KeyCode.Alpha6) && inv.Count >= 6) desiredSlot = 5;
-        else if (Input.GetKeyDown(KeyCode.Alpha7) && inv.Count >= 7) desiredSlot = 6;
-        else if (Input.GetKeyDown(KeyCode.Alpha8) && inv.Count >= 8) desiredSlot = 7;
-        else if (Input.GetKeyDown(KeyCode.Alpha9) && inv.Count >= 9) desiredSlot = 8;
-
-        if (desiredSlot == -1) return;
-
-        // If desired is locked (it should go the next one in the array)
-        while (desiredSlot < inv.Count && !unlocked[desiredSlot])
-        {
-            desiredSlot++;
-        }
-
-        // If desired is unlocked (check if there are any locked before it array selection increases)
-        if (desiredSlot < inv.Count && unlocked[desiredSlot])
-        {
-            int difference = 0;
-            int i = 0;
-            foreach (bool unlock in unlocked)
+        for (int i = 0; i <= 9; i++)
+            if (Input.GetKeyDown(i.ToString()))
             {
-                if (i >= desiredSlot) break;
+                int plus = -1;
+                bool doPlus = false;
+                for(int n = i - 1; n != 0; n--)
+                    if (!unlocked[n])
+                        doPlus = true;
+                if (doPlus)
+                    plus = 0;
 
-                if (unlock) i++;
-                else difference++;
+                slot = i + plus;
+                scrolled = true;
             }
-            
-            desiredSlot += difference;
-        }
-
-        // Apply
-        if (unlocked[desiredSlot])
-        {
-            slot = Mathf.Clamp(desiredSlot, 0, inv.Count - 1);
-        }
     }
 }
