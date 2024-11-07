@@ -471,6 +471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: --- Shopkeeper UI ---
       objectReference: {fileID: 0}
+    - target: {fileID: 151201170284549840, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2678842212350416154, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -547,6 +551,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5599480302767276449, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5653569812032411525, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -585,7 +593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6903948139201409334, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055140952744863469, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
+      propertyPath: m_Size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7544931632762529542, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -605,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641007577869643771, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000015258789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8231814021119033133, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1217,11 +1229,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5409165472854453472, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.06
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: 5409165472854453472, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 5409165472854453472, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1396,7 +1408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: dekurenzi
-      value: 999999
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: maxHealth
