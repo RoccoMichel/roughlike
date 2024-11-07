@@ -195,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -47055,7 +47055,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -47186,7 +47186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -47295,7 +47295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -47303,7 +47303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: spawnFrequency
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: numberOfEnemySpawning
@@ -47427,7 +47427,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -47625,7 +47625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -48051,7 +48051,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -48214,7 +48214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -51374,7 +51374,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -58405,7 +58405,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -58609,7 +58609,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -58812,7 +58812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -65129,7 +65129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -65203,7 +65203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
@@ -65342,7 +65342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: seeDistens
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 405246607098843071, guid: 1c0c034f89482c740bde72c82db5a1a3, type: 3}
       propertyPath: minPlayerDist
