@@ -9,7 +9,8 @@ public class Gun : MonoBehaviour
     public float damage;
     public float baseDamage;
     public float range;
-    public float fireRate;
+    float fireRate;
+    public float baseFireRate;
     public int maxAmmo;
     bool hasFired = false;
 
@@ -29,11 +30,16 @@ public class Gun : MonoBehaviour
     public void CheckDamage()
     {
         damage = baseDamage + p.damage;
+
+        fireRate = baseFireRate + p.fireRate;
     }
 
     private void Awake()
     {
         if (setDamageOnStart) CheckDamage();
+
+        if (p == null)
+            p = transform.GetComponentInParent<Player>();
     }
 
     virtual public void Shoot()
