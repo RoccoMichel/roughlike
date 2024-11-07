@@ -6,7 +6,7 @@ public class EnemyStats : MonoBehaviour
 {
     public float health;
 
-    public List<GameObject> drops;
+    public GameObject dekurenzi;
 
     public GameObject damageTextObj;
     TMP_Text damageText;
@@ -19,7 +19,9 @@ public class EnemyStats : MonoBehaviour
     {
         if(health <= 0)
         {
-            //Instantiate(drops[Random.Range(0, drops.Count)], transform.position, Quaternion.identity);
+            GameObject obj = Instantiate(dekurenzi, transform.position, Quaternion.identity);
+            obj.GetComponent<PickUp>().enemyDrop = true;
+
             Destroy(gameObject);
         }
     }

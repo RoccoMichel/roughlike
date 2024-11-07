@@ -5,6 +5,8 @@ public class PickUp : MonoBehaviour
 {
     [SerializeField] Types type;
     [SerializeField] GameObject infoText;
+
+    public bool enemyDrop;
     enum Types { ammo, health, dekurenzi, jubs, items}
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,12 +39,22 @@ public class PickUp : MonoBehaviour
                 break;
 
             case Types.dekurenzi:
-                int amountDekurenzi;
+                int amountDekurenzi = 0;
 
-                if (choice > 65) amountDekurenzi = 250;
-                else if (choice > 30) amountDekurenzi = 500;
-                else if (choice > 5) amountDekurenzi = 1000;
-                else amountDekurenzi = 2000;
+                if (enemyDrop)
+                {
+                    if (choice >= 70)
+                        amountDekurenzi = Random.Range(20, 100);
+                    else
+                        amountDekurenzi = Random.Range(150, 500);
+                }
+                else
+                {
+                    if (choice > 65) amountDekurenzi = 250;
+                    else if (choice > 30) amountDekurenzi = 500;
+                    else if (choice > 5) amountDekurenzi = 1000;
+                    else amountDekurenzi = 2000;
+                }
 
                 info.GetComponent<TMP_Text>().text = $"+{amountDekurenzi}$";
                 player.dekurenzi += amountDekurenzi;

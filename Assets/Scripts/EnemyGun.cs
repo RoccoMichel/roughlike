@@ -33,7 +33,7 @@ public class EnemyGun : EnemyMovement
     {
         if (!hasFired)
         {
-            //Shoots a ray twords the player
+            //Shoots a ray towards the player
             Vector3 dir = -(transform.position - player.position).normalized;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 10, Player);
             if (hit)
