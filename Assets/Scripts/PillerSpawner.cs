@@ -16,6 +16,7 @@ public class PillerSpawner : MonoBehaviour
 
     [Header("Debugging")]
     public bool debug;
+    public bool seeDistens;
 
     private void Start()
     {
@@ -58,6 +59,15 @@ public class PillerSpawner : MonoBehaviour
                 lr.SetPosition(3, pos);
             }
             time = 0;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (seeDistens)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, minPlayerDist);
         }
     }
 }
