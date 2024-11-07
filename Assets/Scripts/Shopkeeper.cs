@@ -47,10 +47,10 @@ public class Shopkeeper : MonoBehaviour
     }
     public void Enter()
     {
+        RefreshValues();
         Time.timeScale = 0;
         playerUI.SetActive(false);
         GetComponent<Canvas>().enabled = true;
-        currentPlayer.speed = 0;
     }
     public void Leave()
     {
