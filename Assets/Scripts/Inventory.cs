@@ -87,6 +87,8 @@ public class Inventory : MonoBehaviour
     {
         for(int i = 0; i < inv.Count; i++)
             gunsAmmo[i] = maxAmmo[i];
+
+        inv[slot].GetComponent<Gun>().ammo = inv[slot].GetComponent<Gun>().maxAmmo;
     }
 
     public void RefillAmmoRandom()
