@@ -56,15 +56,15 @@ public class PurchaseItem : MonoBehaviour
             case Purchases.Flare:
                 /*MISSING*/ break;
             case Purchases.PistolGun:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
             case Purchases.SniperGun:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
             case Purchases.RevolverGun:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
             case Purchases.UziGun:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
             case Purchases.ARGun:
-                /*MISSING*/ break;
+                inventory.UnlockGun(0); break; //
 
             // Jubs
             case Purchases.SpeedUpgrade:

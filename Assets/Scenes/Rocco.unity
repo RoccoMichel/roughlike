@@ -372,6 +372,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1344802935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8906556174498685968, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
+  m_PrefabInstance: {fileID: 2046813095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1344802936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344802935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 0.043396115, b: 0.043396115, a: 1}
+  m_Intensity: 7.24
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 181.02864
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0.38
+  m_PointLightOuterRadius: 0.59
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &1511669639
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: --- Shopkeeper UI ---
       objectReference: {fileID: 0}
+    - target: {fileID: 151201170284549840, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2678842212350416154, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -547,6 +608,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5599480302767276449, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5653569812032411525, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -585,7 +650,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6903948139201409334, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055140952744863469, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
+      propertyPath: m_Size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7544931632762529542, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -605,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641007577869643771, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000015258789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8231814021119033133, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1217,11 +1286,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5409165472854453472, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.06
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: 5409165472854453472, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 5409165472854453472, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1262,7 +1331,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8906556174498685968, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1344802936}
   m_SourcePrefab: {fileID: 100100000, guid: 6476752c4699cc545b07297d9b494bb4, type: 3}
 --- !u!1001 &1954950094947086586
 PrefabInstance:
@@ -1396,7 +1468,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: dekurenzi
-      value: 999999
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: maxHealth

@@ -951,6 +951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 8
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &3380253591919655595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,6 +1765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 9
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &4471377150333636296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2375,6 +2377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 14
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &4344762481885131593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2885,6 +2888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 15
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &2243893664151618381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3048,6 +3052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &3242489284998018189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3153,7 +3158,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4861507694144465602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1650991073583690470}
+        m_TargetAssemblyTypeName: PurchaseItem, Assembly-CSharp
+        m_MethodName: Purchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5089712116971853122}
+        m_TargetAssemblyTypeName: Shopkeeper, Assembly-CSharp
+        m_MethodName: RefreshValues
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1028154669645369421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,6 +3451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &3167491852959638175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3857,6 +3887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 20
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &1843442562004530429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4671,6 +4702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &2097601216915608771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5564,6 +5596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 19
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &8933124574693424780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6401,6 +6434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &2227107913998447912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8295,6 +8329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 6
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &9191541021052756028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9964,6 +9999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 7
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &443711421625902517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11005,6 +11041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 18
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &1905037552586721740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11440,6 +11477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 12
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &5667790790489642301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11985,6 +12023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 5
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &7710568669828991959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12492,6 +12531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 4
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &1690839124155287138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13332,6 +13372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &2201714439066701595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13934,6 +13975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 17
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &6973219958880273649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15397,6 +15439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 16
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &5545087442380323505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16302,6 +16345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 11
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &4784888238358635126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17299,6 +17343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 13
   player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!114 &4181104022553518885
 MonoBehaviour:
   m_ObjectHideFlags: 0
