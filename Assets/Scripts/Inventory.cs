@@ -1,4 +1,3 @@
-using Mono.Cecil;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +11,7 @@ public class Inventory : MonoBehaviour
     public List<bool> unlocked;
 
     int slot;
-    int currentSlot = 0;
+    public int currentSlot = 0;
 
     private void Start()
     {
@@ -38,7 +37,9 @@ public class Inventory : MonoBehaviour
 
     private void Update()
     {
-        slot += (int)(Input.GetAxisRaw("Mouse ScrollWheel") * 10);
+        slot -= (int)(Input.GetAxisRaw("Mouse ScrollWheel") * 10);
+
+        NumberInput();
 
         CheckSlot();
 
@@ -62,7 +63,7 @@ public class Inventory : MonoBehaviour
 
         inv[slot].SetActive(true);
         inv[slot].GetComponent<Gun>().ammo = gunsAmmo[slot];
-        inv[slot].GetComponent<Gun>().ChekcDamage();
+        inv[slot].GetComponent<Gun>().CheckDamage();
     }
 
     void CheckSlot()
@@ -100,5 +101,17 @@ public class Inventory : MonoBehaviour
         gunsAmmo[refill] += Random.Range(10, (int)(maxAmmo[refill] / 2));
         if (gunsAmmo[refill] > maxAmmo[refill])
             gunsAmmo[refill] = maxAmmo[refill];
+    }
+    void NumberInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1) && inv.Count >= 1) slot = 0;
+        if (Input.GetKeyDown(KeyCode.Alpha2) && inv.Count >= 2) slot = 1;
+        if (Input.GetKeyDown(KeyCode.Alpha3) && inv.Count >= 3) slot = 2;
+        if (Input.GetKeyDown(KeyCode.Alpha4) && inv.Count >= 4) slot = 3;
+        if (Input.GetKeyDown(KeyCode.Alpha5) && inv.Count >= 5) slot = 4;
+        if (Input.GetKeyDown(KeyCode.Alpha6) && inv.Count >= 6) slot = 5;
+        if (Input.GetKeyDown(KeyCode.Alpha7) && inv.Count >= 7) slot = 6;
+        if (Input.GetKeyDown(KeyCode.Alpha8) && inv.Count >= 8) slot = 7;
+        if (Input.GetKeyDown(KeyCode.Alpha9) && inv.Count >= 9) slot = 8;
     }
 }

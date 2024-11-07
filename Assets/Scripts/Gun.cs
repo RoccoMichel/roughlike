@@ -15,28 +15,28 @@ public class Gun : MonoBehaviour
 
     [Header("References")]
     public Transform tip;
-    public GameObject muzzelFlach;
+    public GameObject muzzleFlash;
     public Player p;
 
-    [Header("Leayermasks")]
+    [Header("LayerMasks")]
     public LayerMask enemy;
     public LayerMask create;
 
-    [Header("Debuging")]
+    [Header("Debugging")]
     public bool setDamageOnStart;
 
-    //Runes when you switch wepons
-    public void ChekcDamage()
+    //Runes when you switch weapons
+    public void CheckDamage()
     {
         damage = baseDamage + p.damage;
     }
 
     private void Awake()
     {
-        if (setDamageOnStart) ChekcDamage();
+        if (setDamageOnStart) CheckDamage();
     }
 
-    public void Shoot()
+    virtual public void Shoot()
     {
         if (!hasFired)
         {
@@ -44,7 +44,7 @@ public class Gun : MonoBehaviour
             rot.x = -transform.eulerAngles.z;
             rot.y = 90;
 
-            Instantiate(muzzelFlach, tip.position, Quaternion.Euler(rot));
+            Instantiate(muzzleFlash, tip.position, Quaternion.Euler(rot));
 
             ammo -= 1;
             RaycastHit2D hit = Physics2D.Raycast(tip.position, transform.right, range, enemy);
@@ -66,7 +66,7 @@ public class Gun : MonoBehaviour
         }
     }
 
-    public void RefilAmmo()
+    public void RefillAmmo()
     {
         ammo = maxAmmo;
     }
