@@ -10,6 +10,9 @@ public class EnemyMovement : MonoBehaviour
     public float stoppingDistens = 1;
     public float maxDistens = 30;
 
+    [Space]
+    public bool debug;
+
     [Header("Sprite")]
     public SpriteRenderer sr;
     public Sprite funnyLitleGuy;
@@ -52,6 +55,18 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.tag == "EnemyStop")
         {
             canMove = true;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (debug)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, maxDistens);
+
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, stoppingDistens);
         }
     }
 }

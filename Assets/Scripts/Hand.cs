@@ -17,6 +17,8 @@ public class Hand : MonoBehaviour
 
     void Rotate()
     {
+        if (Time.timeScale == 0) return;
+
         mus = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         der = mus - player.position;
         ang = Mathf.Atan2(der.y, der.x) * Mathf.Rad2Deg;

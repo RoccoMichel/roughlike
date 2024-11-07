@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1f143b13bc75d604c8aae141579c7dd2
+guid: b71338d9075fabe499d8b114a1657400
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8866722518315721709
-    second: Bad Blood_0
+      213: -2474850970052898831
+    second: spawn_pillar_skolprojekt_2024_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bad Blood_0
+      name: spawn_pillar_skolprojekt_2024_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 4
-        width: 712
-        height: 586
+        x: 277
+        y: 38
+        width: 289
+        height: 945
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de36a2a072dec0b70800000000000000
-      internalID: 8866722518315721709
+      spriteID: 1ff47f1b72097add0800000000000000
+      internalID: -2474850970052898831
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6c2a55f475921f6489532268d5265e68
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bad Blood_0: 8866722518315721709
+      spawn_pillar_skolprojekt_2024_0: -2474850970052898831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
