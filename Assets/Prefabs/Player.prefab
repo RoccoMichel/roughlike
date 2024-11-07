@@ -921,7 +921,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2344062541004463635
@@ -1045,7 +1045,7 @@ MonoBehaviour:
   speed: 4
   input: {x: 0, y: 0}
   FlashlightKey: 102
-  FlashLight: {fileID: 1374397048847059269}
+  FlashLight: {fileID: 3879796385392357301}
   knockback: 1000
   reach: 10
   punchKey: 101
