@@ -1406,6 +1406,10 @@ PrefabInstance:
       propertyPath: batteryDrainRate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6646502828447409749, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6927371495338160696, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
