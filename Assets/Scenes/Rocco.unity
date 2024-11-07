@@ -1345,6 +1345,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 9999999
       objectReference: {fileID: 0}
+    - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
+      propertyPath: batteryDrainRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6927371495338160696, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

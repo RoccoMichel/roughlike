@@ -104,14 +104,45 @@ public class Inventory : MonoBehaviour
     }
     void NumberInput()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && inv.Count >= 1) slot = 0;
-        if (Input.GetKeyDown(KeyCode.Alpha2) && inv.Count >= 2) slot = 1;
-        if (Input.GetKeyDown(KeyCode.Alpha3) && inv.Count >= 3) slot = 2;
-        if (Input.GetKeyDown(KeyCode.Alpha4) && inv.Count >= 4) slot = 3;
-        if (Input.GetKeyDown(KeyCode.Alpha5) && inv.Count >= 5) slot = 4;
-        if (Input.GetKeyDown(KeyCode.Alpha6) && inv.Count >= 6) slot = 5;
-        if (Input.GetKeyDown(KeyCode.Alpha7) && inv.Count >= 7) slot = 6;
-        if (Input.GetKeyDown(KeyCode.Alpha8) && inv.Count >= 8) slot = 7;
-        if (Input.GetKeyDown(KeyCode.Alpha9) && inv.Count >= 9) slot = 8;
+        int desiredSlot = -1;
+        if (Input.GetKeyDown(KeyCode.Alpha1) && inv.Count >= 1) desiredSlot = 0;
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && inv.Count >= 2) desiredSlot = 1;
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && inv.Count >= 3) desiredSlot = 2;
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && inv.Count >= 4) desiredSlot = 3;
+        else if (Input.GetKeyDown(KeyCode.Alpha5) && inv.Count >= 5) desiredSlot = 4;
+        else if (Input.GetKeyDown(KeyCode.Alpha6) && inv.Count >= 6) desiredSlot = 5;
+        else if (Input.GetKeyDown(KeyCode.Alpha7) && inv.Count >= 7) desiredSlot = 6;
+        else if (Input.GetKeyDown(KeyCode.Alpha8) && inv.Count >= 8) desiredSlot = 7;
+        else if (Input.GetKeyDown(KeyCode.Alpha9) && inv.Count >= 9) desiredSlot = 8;
+
+        if (desiredSlot == -1) return;
+
+        // If desired is locked (it should go the next one in the array)
+        while (desiredSlot < inv.Count && !unlocked[desiredSlot])
+        {
+            desiredSlot++;
+        }
+
+        // If desired is unlocked (check if there are any locked before it array selection increases)
+        if (desiredSlot < inv.Count && unlocked[desiredSlot])
+        {
+            int difference = 0;
+            int i = 0;
+            foreach (bool unlock in unlocked)
+            {
+                if (i >= desiredSlot) break;
+
+                if (unlock) i++;
+                else difference++;
+            }
+            
+            desiredSlot += difference;
+        }
+
+        // Apply
+        if (unlocked[desiredSlot])
+        {
+            slot = Mathf.Clamp(desiredSlot, 0, inv.Count - 1);
+        }
     }
 }
