@@ -5,7 +5,7 @@ public class Gun : MonoBehaviour
 {
     [Header("Settings")]
     public int ammo;
-    [HideInInspector]
+   // [HideInInspector]
     public float damage;
     public float baseDamage;
     public float range;
