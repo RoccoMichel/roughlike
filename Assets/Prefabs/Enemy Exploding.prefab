@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43496a0b33ee3c4e81de0f6c3903ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 1
   dekurenzi: {fileID: 3971853827540606516, guid: 19a936ceeb4f20d4c9ba36530774a5cb, type: 3}
   damageTextObj: {fileID: 7750455506941791679, guid: 802c0bf139ba2e44baf3798e7150d23c, type: 3}
   bigDamage: {r: 0.7584905, g: 0.0787112, b: 0.0787112, a: 1}

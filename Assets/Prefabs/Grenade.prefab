@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3861870301132269239}
   - component: {fileID: 6989207131329957821}
   m_Layer: 0
-  m_Name: Smoke Bomb
+  m_Name: Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 8987429913832189681}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.62618977, y: 0.4516696, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8365bf8e66a383146b9425ce7fbf9bcb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2646fe7c32e3594aab2ad68d375055f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,10 +102,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammo: 10
   damage: 0
-  baseDamage: 0
-  range: 100
+  baseDamage: 50
+  range: 2.5
   baseFireRate: 0
-  maxAmmo: 0
+  maxAmmo: 10
   tip: {fileID: 0}
   muzzleFlash: {fileID: 0}
   p: {fileID: 0}
@@ -119,4 +119,4 @@ MonoBehaviour:
   shoot: 323
   throwForce: 100
   obj: {fileID: 4263344651342329065, guid: 1116b2c3fd6f5bb4aa4953f01bde411c, type: 3}
-  explodeTime: 0
+  explodeTime: 2

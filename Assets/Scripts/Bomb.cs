@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmokeBomb : MonoBehaviour
+public class Bomb : MonoBehaviour
 {
     public float explodeTime;
     public float damage;
     public float range;
     float time;
+
+    public GameObject particle;
 
     public GameObject[] enemyPos;
     public List<GameObject> doDamage;
@@ -34,6 +36,8 @@ public class SmokeBomb : MonoBehaviour
 
         for (int i = 0; i < doDamage.Count; i++)
             doDamage[i].GetComponent<EnemyStats>().TakeDamage(damage);
+
+        Instantiate(particle, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }
