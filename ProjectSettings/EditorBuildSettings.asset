@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 98e5bf24122515047819784e53b6b29d
   - enabled: 1
+    path: Assets/Scenes/Levels/Level Felix.unity
+    guid: 2275a46b129d8924488b2f051a5d837a
+  - enabled: 1
     path: Assets/Scenes/DEATH.unity
     guid: 89f7f363cd9075644a7972bb48b27ab1
   - enabled: 1
