@@ -23,7 +23,7 @@ public class EnemyManager : MonoBehaviour
         canSpawn = !(maxEnemys < enemys.Count);
 
         if (!debug)
-            maxEnemys = (int)PlayerPrefs.GetFloat("jubsEnemies", 10);
+            maxEnemys = (int)PlayerPrefs.GetFloat("jubsEnemies", 50);
 
         if(enemys.Count > maxEnemys)
         {
