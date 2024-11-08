@@ -650,10 +650,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6903948139201409334, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: -0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 7055140952744863469, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055140952744863469, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
+      propertyPath: m_Value
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7544931632762529542, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
@@ -674,7 +678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7641007577869643771, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.000015258789
       objectReference: {fileID: 0}
     - target: {fileID: 8231814021119033133, guid: 5869d0054aa4ee7419014a6f37330ed5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1292,27 +1296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: dekurenzi
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      propertyPath: maxHealth
-      value: 9999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4718775176971862752, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      propertyPath: batteryDrainRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5688961399628363317, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1d5a616395ff32c4a8cbfb20685620ac, type: 3}
-    - target: {fileID: 5688961399628363317, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646502828447409749, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 999999
       objectReference: {fileID: 0}
     - target: {fileID: 6927371495338160696, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1357,14 +1341,6 @@ PrefabInstance:
     - target: {fileID: 7733859159391410142, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8608213777898039160, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7715777626038354296, guid: 8365bf8e66a383146b9425ce7fbf9bcb, type: 3}
-    - target: {fileID: 8608213777898039160, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

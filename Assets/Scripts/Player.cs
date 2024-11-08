@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
         else
         {
             if (Input.GetKeyDown(FlashlightKey) && battery > 10) usingFlashlight = true;
-            battery += Time.deltaTime * batteryDrainRate * 2;
+            battery += Time.deltaTime * 16;
         }
         FlashLight.SetActive(usingFlashlight);
 
@@ -113,8 +113,6 @@ public class Player : MonoBehaviour
     }
     public void Die()
     {
-        Debug.LogWarning("You died");
-
         PlayerPrefs.SetInt("death", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("DEATH");
     }
@@ -145,7 +143,7 @@ public class Player : MonoBehaviour
     }
     public void BatteryUpgrade()
     {
-        batteryDrainRate = Mathf.Clamp(batteryDrainRate, 0.1f, int.MaxValue);
+        batteryDrainRate = Mathf.Clamp(batteryDrainRate - 1, 0.1f, int.MaxValue);
     }
     public void PiercingUpgrade()
     {
@@ -175,9 +173,11 @@ public class Player : MonoBehaviour
     public void IncreaseEnemiesUpgrade()
     {
         PlayerPrefs.SetFloat("jubsEnemies", PlayerPrefs.GetFloat("jubsEnemies", 20) + 1.5f);
+        PlayerPrefs.SetInt("jubsEnemiesCount", PlayerPrefs.GetInt("jubsEnemiesCount", 0) + 1);
     }
     public void DecreaseEnemiesUpgrade()
     {
         PlayerPrefs.SetFloat("jubsEnemies", PlayerPrefs.GetFloat("jubsEnemies", 20) - 1.5f);
+        PlayerPrefs.SetInt("jubsEnemiesCount", PlayerPrefs.GetInt("jubsEnemiesCount", 0) + 1);
     }
 }

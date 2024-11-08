@@ -27,7 +27,7 @@ public class Upgrade : MonoBehaviour
     {
         if (player == null)
         {
-            try { player = GameObject.FindWithTag("Player").GetComponent<Player>();  }
+            try { player = GameObject.FindWithTag("Player").GetComponent<Player>(); }
             catch { player = shopkeeper.currentPlayer; }
         }
 
@@ -61,6 +61,8 @@ public class Upgrade : MonoBehaviour
         else if (currency == PriceTypes.jubs)
         {
             priceText.text = $"@{price}";
+            count = GetComponent<PurchaseItem>().JubUpgradeCount();
+
             if (PlayerPrefs.GetFloat("jubs", 0) >= price) button.interactable = true;
             else button.interactable = false;
         }

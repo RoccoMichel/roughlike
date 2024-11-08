@@ -27,8 +27,6 @@ public class PurchaseItem : MonoBehaviour
 
     public void Purchase()
     {
-        GetComponent<Upgrade>().Purchase();
-
         switch (type)
         {
             // Player
@@ -77,5 +75,25 @@ public class PurchaseItem : MonoBehaviour
             case Purchases.LessEnemies:
                 player.IncreaseEnemiesUpgrade(); break; // Variable isn't used anywhere YET
         }
+
+        GetComponent<Upgrade>().Purchase();
+    }
+
+    public int JubUpgradeCount()
+    {
+        switch (type)
+        {
+            case Purchases.SpeedUpgrade:
+                return Mathf.FloorToInt((PlayerPrefs.GetFloat("jubsSpeed", 4) - 4) / 0.5f);
+            case Purchases.LuckUpgrade:
+                return PlayerPrefs.GetInt("jubsLuck", 0);
+            case Purchases.BiggerFlashlight:
+                return Mathf.FloorToInt((PlayerPrefs.GetFloat("jubsFlash", 2) - 2) / 0.1f);
+            case Purchases.MoreEnemies:
+                return PlayerPrefs.GetInt("jubsEnemiesCount", 0);
+            case Purchases.LessEnemies:
+                return PlayerPrefs.GetInt("jubsEnemiesCount", 0);
+        }
+        return 0;
     }
 }

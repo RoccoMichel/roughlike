@@ -17,6 +17,9 @@ public class Shopkeeper : MonoBehaviour
     public TMP_Text jubDisplay;
     GameObject playerUI;
 
+    [Header("Developer Options")]
+    [SerializeField] bool resetJubUpgrades;
+
     private void Start()
     {
         if (GameObject.FindWithTag("Player UI") != null) playerUI = GameObject.FindWithTag("Player UI");
@@ -53,13 +56,13 @@ public class Shopkeeper : MonoBehaviour
     {
         RefreshValues();
         Time.timeScale = 0;
-        playerUI.SetActive(false);
+        if (playerUI != null) playerUI.SetActive(false);
         GetComponent<Canvas>().enabled = true;
     }
     public void Leave()
     {
         Time.timeScale = 1;
-        playerUI.SetActive(true);
+        if (playerUI != null) playerUI.SetActive(true);
         GetComponent<Canvas>().enabled = false;
     }
     public void RefreshValues()
@@ -72,5 +75,22 @@ public class Shopkeeper : MonoBehaviour
 
         foreach (GameObject upgrade in GameObject.FindGameObjectsWithTag("Upgrade"))
             upgrade.GetComponent<Upgrade>().RefreshValues();
+    }
+    static void ResetJubsUpgrades()
+    {
+        PlayerPrefs.SetFloat("jubsSpeed", 4);
+        PlayerPrefs.SetInt("jubsLuck", 0);
+        PlayerPrefs.SetFloat("jubsFlash", 2);
+        PlayerPrefs.SetInt("jubsEnemiesCount", 0);
+    }
+
+    void OnValidate()
+    {
+        if (resetJubUpgrades)
+        {
+            ResetJubsUpgrades();
+            Debug.Log("Jub Upgrades have been reset");
+            resetJubUpgrades = false;
+        }
     }
 }

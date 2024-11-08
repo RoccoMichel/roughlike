@@ -15,30 +15,29 @@ public class CanvasManager : MonoBehaviour
     public TMP_Text dekurenziDisplay;
     public TMP_Text jubsDisplay;
     public Slider healthBar;
-    public Slider batteryBar;
+    public RectTransform batteryFill;
 
     private void Start()
     {
         if (playerScript == null) playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if (inventoryScript == null) inventoryScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-
-        RefreshValues();
     }
 
     private void Update()
-    {
-        // BATTRY UI
-        batteryBar.value = playerScript.battery;
-
+    { 
         // HEALTH UI
         float health = playerScript.health < playerScript.maxHealth / 10 ? 
             (float)System.Math.Round(playerScript.health, 1) : Mathf.Round(playerScript.health);
         healthText.text = $"{health}/{playerScript.maxHealth} HP";
         healthBar.value = playerScript.health;
+        RefreshValues();
 
         // CURRENCY DISPLAY
         dekurenziDisplay.text = $"${playerScript.dekurenzi}";
         jubsDisplay.text = $"@{PlayerPrefs.GetFloat("jubs", 0)}";
+
+        // BATTERY
+        batteryFill.anchoredPosition = new Vector2(Mathf.Lerp(-67, -2, playerScript.battery / 100), 0);
 
         // INVENTORY
 
@@ -121,8 +120,6 @@ public class CanvasManager : MonoBehaviour
     }
     public void RefreshValues()
     {
-        batteryBar.maxValue = 100;
-        batteryBar.minValue = 0;
         healthBar.maxValue = playerScript.maxHealth;
         healthBar.minValue = 0;
     }
