@@ -24,7 +24,7 @@ public class EnemyGun : EnemyMovement
 
         Move();
 
-        canShoot = dist <= stoppingDistens;
+        canShoot = dist <= stoppingDistens && canMove;
         if (canShoot)
             Shoot();
     }
@@ -38,7 +38,6 @@ public class EnemyGun : EnemyMovement
             RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 10, Player);
             if (hit)
             {
-                print(hit.transform.name);
                 hit.transform.gameObject.GetComponent<Player>().TakeDamage(damage);
             }
 

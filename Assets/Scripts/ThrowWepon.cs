@@ -21,9 +21,9 @@ public class ThrowWepon : Gun
         GameObject spawnedObj = Instantiate(obj, transform.position, transform.rotation);
         rb = spawnedObj.GetComponent<Rigidbody2D>();
         rb.AddForce(transform.right * throwForce);
-        spawnedObj.GetComponent<SmokeBomb>().damage = damage;
-        spawnedObj.GetComponent<SmokeBomb>().range = range;
-        spawnedObj.GetComponent<SmokeBomb>().explodeTime = explodeTime;
+        spawnedObj.GetComponent<Bomb>().damage = damage;
+        spawnedObj.GetComponent<Bomb>().range = range;
+        spawnedObj.GetComponent<Bomb>().explodeTime = explodeTime;
 
         ammo -= 1;
     }
