@@ -91,6 +91,8 @@ public class Player : MonoBehaviour
         ani.SetFloat("Vertical", input.y);
         ani.SetFloat("Horizontal", input.x);
 
+        GetComponent<SpriteRenderer>().flipX = input.x > 0;
+
         // APPLY
         rigidbody.linearVelocity = movement;
     }
