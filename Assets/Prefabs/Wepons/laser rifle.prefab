@@ -140,6 +140,7 @@ MonoBehaviour:
   maxAmmo: 150
   tip: {fileID: 7571241599684618034}
   muzzleFlash: {fileID: 6674308412064882718, guid: 714519d6a41dd684c91cd89ed79b1e57, type: 3}
+  hitParticle: {fileID: 2184843398905789289, guid: 1be57106fd0a38c4eb7f61aef7259405, type: 3}
   p: {fileID: 0}
   enemy:
     serializedVersion: 2
