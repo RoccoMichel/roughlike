@@ -3068,7 +3068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9121187480108424277
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4732,6 +4732,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8937159559615533983}
     m_Modifications:
+    - target: {fileID: 2098254782449001274, guid: eeb3f4e0d57306d46a577eaebff58fe2, type: 3}
+      propertyPath: pauseKey
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 2098254782449001274, guid: eeb3f4e0d57306d46a577eaebff58fe2, type: 3}
       propertyPath: pauseMenu
       value: 
