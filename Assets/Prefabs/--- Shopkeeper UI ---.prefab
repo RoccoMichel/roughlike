@@ -76,6 +76,7 @@ MonoBehaviour:
   gemTab: {fileID: 3302318811676730928}
   dekurenziDisplay: {fileID: 1221664701125020782}
   jubDisplay: {fileID: 8712378324950081656}
+  resetJubUpgrades: 0
 --- !u!223 &4158976134060328185
 Canvas:
   m_ObjectHideFlags: 0
@@ -2199,7 +2200,7 @@ GameObject:
   - component: {fileID: 2140193053130602938}
   - component: {fileID: 7321060138601941672}
   m_Layer: 5
-  m_Name: Assault Rifle
+  m_Name: Laser Rifle
   m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2254,7 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1147f32c2627b449867d28940e4af75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Assault Rifle
+  name: Laser Rifle
   maxCount: 1
   count: 0
   price: 2000
@@ -3307,7 +3308,7 @@ MonoBehaviour:
   name: 
   maxCount: 0
   count: 0
-  price: 50
+  price: 2400
   priceScaling: 1
   currency: 0
   player: {fileID: 0}
@@ -5990,7 +5991,7 @@ MonoBehaviour:
   name: 
   maxCount: 0
   count: 0
-  price: 50
+  price: 2400
   priceScaling: 1
   currency: 0
   player: {fileID: 0}
@@ -10839,7 +10840,7 @@ GameObject:
   - component: {fileID: 6643680093542782238}
   - component: {fileID: 6473939092070265380}
   m_Layer: 5
-  m_Name: Revolver
+  m_Name: Big Iron
   m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10894,7 +10895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1147f32c2627b449867d28940e4af75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Revolver
+  name: Big Iron
   maxCount: 1
   count: 0
   price: 1500
@@ -15706,7 +15707,7 @@ GameObject:
   - component: {fileID: 7159673828227159910}
   - component: {fileID: 1571460678223577866}
   m_Layer: 5
-  m_Name: Sniper
+  m_Name: Railgun
   m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15761,7 +15762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1147f32c2627b449867d28940e4af75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sniper
+  name: Railgun
   maxCount: 1
   count: 0
   price: 4000

@@ -46,9 +46,9 @@ public class PickUp : MonoBehaviour
                 if (enemyDrop)
                 {
                     if (choice >= 70)
-                        amountDekurenzi = Random.Range(20, 100);
+                        amountDekurenzi = Random.Range(20, 50);
                     else
-                        amountDekurenzi = Random.Range(150, 500);
+                        amountDekurenzi = Random.Range(75, 150);
                 }
                 else
                 {
