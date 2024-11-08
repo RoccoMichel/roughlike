@@ -25,6 +25,8 @@ public class PillerSpawner : MonoBehaviour
 
     private void Start()
     {
+        if (tm == null) tm = GameObject.FindGameObjectWithTag("floor").GetComponent<Tilemap>();
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         for (int x = tm.cellBounds.xMin; x < tm.cellBounds.xMax; x++)

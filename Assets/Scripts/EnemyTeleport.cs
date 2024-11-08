@@ -25,6 +25,8 @@ public class EnemyTeleport : EnemyMovement
         es = GetComponent<EnemyStats>();
         curentHealth = es.health;
 
+        if (tm == null) tm = GameObject.FindGameObjectWithTag("floor").GetComponent<Tilemap>();
+
         for(int x = tm.cellBounds.xMin; x < tm.cellBounds.xMax; x++)
         {
             for(int y = tm.cellBounds.yMin; y < tm.cellBounds.yMax; y++)
