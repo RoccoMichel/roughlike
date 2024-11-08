@@ -32,7 +32,7 @@ public class Inventory : MonoBehaviour
         inv[0].SetActive(true);
 
         for (int i = 0; i < inv.Count; i++)
-            unlocked.Add(true);
+            unlocked.Add(false);
 
         unlocked[0] = true;
     }

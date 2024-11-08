@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -10,6 +11,11 @@ public class EnemyTeleport : EnemyMovement
 
     [Header("Settings")]
     public float maxTeleportDist = 20;
+    public float damage;
+    public float fireRate;
+    public LayerMask Player;
+    bool hasFired;
+    bool canShoot;
 
     [Header("Sprits")]
     public Sprite front;
@@ -52,6 +58,10 @@ public class EnemyTeleport : EnemyMovement
         Teleport();
 
         Rotate();
+
+        canShoot = dist <= stoppingDistens && canMove;
+        if (canShoot)
+            Shoot();
     }
 
     void Teleport()
@@ -68,6 +78,23 @@ public class EnemyTeleport : EnemyMovement
             transform.position = teleportPos;
 
             curentHealth = es.health;
+        }
+    }
+
+    void Shoot()
+    {
+        if (!hasFired)
+        {
+            //Shoots a ray towards the player
+            Vector3 dir = -(transform.position - player.position).normalized;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 10, Player);
+            if (hit)
+            {
+                hit.transform.gameObject.GetComponent<Player>().TakeDamage(damage);
+            }
+
+            hasFired = true;
+            StartCoroutine(SetHasFiredToFalse());
         }
     }
 
@@ -111,5 +138,11 @@ public class EnemyTeleport : EnemyMovement
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, maxTeleportDist);
         }
+    }
+
+    public IEnumerator SetHasFiredToFalse()
+    {
+        yield return new WaitForSeconds(fireRate);
+        hasFired = false;
     }
 }

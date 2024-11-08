@@ -194,7 +194,7 @@ MonoBehaviour:
   ads: {fileID: 37001709438456724}
   path: {fileID: 8874059717977946377}
   player: {fileID: 0}
-  stoppingDistens: 1
+  stoppingDistens: 2
   maxDistens: 30
   debug: 0
   sr: {fileID: 3916003500622435841}
@@ -203,6 +203,11 @@ MonoBehaviour:
   canMove: 1
   tm: {fileID: 0}
   maxTeleportDist: 20
+  damage: 20
+  fireRate: 1
+  Player:
+    serializedVersion: 2
+    m_Bits: 8
   front: {fileID: 6334645810774743387, guid: 4b1908a6dcb5a5d43b867c8284df5ceb, type: 3}
   back: {fileID: -5575509200816930507, guid: 4b1908a6dcb5a5d43b867c8284df5ceb, type: 3}
   left: {fileID: 2818680686355518359, guid: 4b1908a6dcb5a5d43b867c8284df5ceb, type: 3}
