@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialScene: 1
-  levels: {x: 2, y: 3}
+  levels: {x: 2, y: 4}
   Jubs: {fileID: 243994848}
   Runs: {fileID: 885564310}
 --- !u!1 &568910703
