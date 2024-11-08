@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     [SerializeField] KeyCode FlashlightKey;
     [SerializeField] GameObject FlashLight;
     Rigidbody2D rigidbody;
+    public Animator ani;
 
     [Header("Punch")]
     public float knockback = 10;
@@ -86,6 +87,9 @@ public class Player : MonoBehaviour
         else input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
         Vector2 movement = input * speed;
+
+        ani.SetFloat("Vertical", input.y);
+        ani.SetFloat("Horizontal", input.x);
 
         // APPLY
         rigidbody.linearVelocity = movement;

@@ -17,6 +17,7 @@ public class Gun : MonoBehaviour
     [Header("References")]
     public Transform tip;
     public GameObject muzzleFlash;
+    public GameObject hitParticle;
     public Player p;
 
     [Header("LayerMasks")]
@@ -60,12 +61,17 @@ public class Gun : MonoBehaviour
                 hit.transform.gameObject.GetComponent<EnemyStats>().TakeDamage(damage);
             }
 
-            RaycastHit2D hit2 = Physics2D.Raycast(tip.position, transform.right, range, create);
+            RaycastHit2D hitCrate = Physics2D.Raycast(tip.position, transform.right, range, create);
 
-            if (hit2)
+            if (hitCrate)
             {
-                hit2.transform.gameObject.GetComponent<Crate>().health = 0;
+                hitCrate.transform.gameObject.GetComponent<Crate>().health = 0;
             }
+
+            RaycastHit2D particle =  Physics2D.Raycast(tip.position, transform.right, range);
+
+            if (particle)
+                Instantiate(hitParticle, particle.point, Quaternion.identity);
 
             hasFired = true;
             StartCoroutine(SetHasFiredToFalse());
