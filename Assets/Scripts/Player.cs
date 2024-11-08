@@ -41,6 +41,8 @@ public class Player : MonoBehaviour
         if (rigidbody == null) rigidbody = GetComponent<Rigidbody2D>();
         health = maxHealth;
 
+        dekurenzi = 0;
+
         // Apply Jubs Upgrades:
         speed = PlayerPrefs.GetFloat("jubsSpeed", speed);
         luck = PlayerPrefs.GetInt("jubsLuck", luck);
