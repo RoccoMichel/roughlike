@@ -7,7 +7,7 @@ public class PurchaseItem : MonoBehaviour
     public Purchases type;
     public enum Purchases { HealthUpgrade, HealthFull, AmmoFull, DamageUpgrade,
         Piercing, ReloadSpeed, BatteryLife, /*Upgrades*/
-        Grenade, SmokeBomb, Flare, PistolGun, SniperGun, RevolverGun, UziGun, ARGun, /*Equipment*/
+        Grenade, SniperGun, LazerGun, UziGun, ARGun, /*Equipment*/
         SpeedUpgrade, LuckUpgrade, BiggerFlashlight, MoreEnemies, LessEnemies /*Jubs Upgrades*/
     }
 
@@ -47,17 +47,11 @@ public class PurchaseItem : MonoBehaviour
             case Purchases.AmmoFull:
                 inventory.RefillAllAmmo(); break;
             case Purchases.Grenade:
-                inventory.UnlockGun(0); break; //
-            case Purchases.SmokeBomb:
-                inventory.UnlockGun(0); break; //
-            case Purchases.Flare:
-                inventory.UnlockGun(0); break; //
-            case Purchases.PistolGun:
-                inventory.UnlockGun(0); break; //
-            case Purchases.SniperGun:
                 inventory.UnlockGun(5); break; //
-            case Purchases.RevolverGun:
-                inventory.UnlockGun(0); break; //
+            case Purchases.LazerGun:
+                inventory.UnlockGun(3); break; //
+            case Purchases.SniperGun:
+                inventory.UnlockGun(4); break; //
             case Purchases.UziGun:
                 inventory.UnlockGun(2); break; //
             case Purchases.ARGun:
