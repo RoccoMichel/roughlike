@@ -194,7 +194,7 @@ MonoBehaviour:
   ads: {fileID: 8436665122922675697}
   path: {fileID: 2334474915368798542}
   player: {fileID: 0}
-  stoppingDistens: 2
+  stoppingDistens: 4
   maxDistens: 30
   debug: 0
   sr: {fileID: 3093856780171948611}
