@@ -22,6 +22,11 @@ public class EnemyMovement : MonoBehaviour
     public bool canMove = true;
     bool move = true;
 
+    void Awake()
+    {
+        EnemyManager.enemys.Add(gameObject);
+    }
+
     public void Move()
     {
         if (player == null) player = GameObject.FindGameObjectWithTag("Player").transform;
