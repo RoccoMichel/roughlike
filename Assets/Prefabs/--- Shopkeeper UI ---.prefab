@@ -744,7 +744,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6078284377110398427}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.000016248427
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14601,7 +14601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dffa11e6025a14f8520500979b40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 11
+  type: 8
   player: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &4784888238358635126
@@ -15599,7 +15599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dffa11e6025a14f8520500979b40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 13
+  type: 10
   player: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &4181104022553518885
