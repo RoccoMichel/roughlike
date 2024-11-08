@@ -9,16 +9,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1195914318222836190, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 183dd3e9d67121e498e06426a2ac1588, type: 3}
+    - target: {fileID: 1195914318222836190, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
       propertyPath: m_Color.b
-      value: 0.4564494
+      value: 0.7830188
       objectReference: {fileID: 0}
     - target: {fileID: 1195914318222836190, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
       propertyPath: m_Color.g
-      value: 0.98742133
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1195914318222836190, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
       propertyPath: m_Color.r
-      value: 0.5493131
+      value: 0.8213097
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465832435469268732, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1465832435469268732, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.024
       objectReference: {fileID: 0}
     - target: {fileID: 2298789526866199531, guid: f7272ed9075eebd4f89b4cb3911ae9f3, type: 3}
       propertyPath: type
