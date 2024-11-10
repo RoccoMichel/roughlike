@@ -108,6 +108,7 @@ MonoBehaviour:
   maxAmmo: 10
   tip: {fileID: 0}
   muzzleFlash: {fileID: 0}
+  hitParticle: {fileID: 0}
   p: {fileID: 0}
   enemy:
     serializedVersion: 2

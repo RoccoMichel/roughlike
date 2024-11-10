@@ -4,7 +4,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public List<GameObject> inv;
-    [HideInInspector]
+    //[HideInInspector]
     public List<int> gunsAmmo;
     [HideInInspector]
     public List<int> maxAmmo;
@@ -66,6 +66,7 @@ public class Inventory : MonoBehaviour
         inv[slot].SetActive(true);
         inv[slot].GetComponent<Gun>().ammo = gunsAmmo[slot];
         inv[slot].GetComponent<Gun>().CheckDamage();
+        inv[slot].GetComponent<Gun>().hasFired = false;
 
         scrolled = false;
     }
@@ -86,15 +87,18 @@ public class Inventory : MonoBehaviour
     public void RefillAllAmmo()
     {
         for(int i = 0; i < inv.Count; i++)
+        {
             gunsAmmo[i] = maxAmmo[i];
-
-        inv[slot].GetComponent<Gun>().ammo = inv[slot].GetComponent<Gun>().maxAmmo;
+            inv[i].GetComponent<Gun>().RefillAmmoFull();
+        }
     }
 
     public void RefillAmmoRandom()
     {
         int refill = Random.Range(0, inv.Count);
-        while (!unlocked[refill])
+        int firstSelection = refill;
+
+        while (!unlocked[refill] || inv[refill].GetComponent<Gun>().ammo == maxAmmo[refill])
         {
             refill++;
 
@@ -102,11 +106,17 @@ public class Inventory : MonoBehaviour
                 refill = inv.Count - 1;
             if (refill > inv.Count - 1)
                 refill = 0;
-        }
 
-        gunsAmmo[refill] += Random.Range(10, (int)(maxAmmo[refill] / 2));
+            if (refill == firstSelection) break;
+        }
+        
+        int amount = Random.Range(10, maxAmmo[refill] / 2);
+
+        gunsAmmo[refill] += amount;
         if (gunsAmmo[refill] > maxAmmo[refill])
             gunsAmmo[refill] = maxAmmo[refill];
+
+        inv[refill].GetComponent<Gun>().RefillAmmoAmount(amount);
     }
 
     void KeybordInput()

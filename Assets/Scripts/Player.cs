@@ -130,7 +130,7 @@ public class Player : MonoBehaviour
 
         // Blood Effect
         if (Camera.main.GetComponent<CameraEffects>() != null)
-            Camera.main.GetComponent<CameraEffects>().BloodOnScreen(Mathf.CeilToInt(amount / 10));
+            Camera.main.GetComponent<CameraEffects>().BloodOnScreen(Mathf.CeilToInt(Mathf.Clamp(amount / 10, 1, 10)));
     }
     public void Heal(float amount)
     {

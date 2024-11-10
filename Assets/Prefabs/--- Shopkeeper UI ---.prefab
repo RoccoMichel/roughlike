@@ -743,7 +743,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1630539367865225208}
   m_HandleRect: {fileID: 6078284377110398427}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1761,7 +1761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 3}
+  m_AnchoredPosition: {x: 0, y: 6}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5339356817822105903
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dffa11e6025a14f8520500979b40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 15
+  type: 12
   player: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &2243893664151618381
@@ -4533,7 +4533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dffa11e6025a14f8520500979b40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 19
+  type: 16
   player: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &8933124574693424780
@@ -8680,7 +8680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Grenade
-  maxCount: 0
+  maxCount: 1
   count: 0
   price: 300
   priceScaling: 1
@@ -9706,7 +9706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dffa11e6025a14f8520500979b40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 18
+  type: 15
   player: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &1905037552586721740
@@ -11911,7 +11911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 264.82}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &7046217210869322576
@@ -12170,8 +12170,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2345557969705718752}
   m_HandleRect: {fileID: 8231814021119033133}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.7972282
+  m_Value: 0.9999991
+  m_Size: 0.79722816
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12367,7 +12367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dffa11e6025a14f8520500979b40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 17
+  type: 14
   player: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &6973219958880273649
@@ -13660,8 +13660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 200, y: 0.000061035156}
-  m_SizeDelta: {x: 200, y: 350}
+  m_AnchoredPosition: {x: 156.1263, y: 0.000061035156}
+  m_SizeDelta: {x: 156.1262, y: 350}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &3288265153385782488
 CanvasRenderer:
@@ -13831,7 +13831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dffa11e6025a14f8520500979b40d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 16
+  type: 13
   player: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &5545087442380323505
@@ -14586,7 +14586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -124.000015}
+  m_AnchoredPosition: {x: 0, y: -121.000015}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196919321298291239
@@ -15584,7 +15584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -60.000015}
+  m_AnchoredPosition: {x: 0, y: -57}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575703808069686407

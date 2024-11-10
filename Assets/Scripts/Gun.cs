@@ -12,7 +12,7 @@ public class Gun : MonoBehaviour
     float fireRate;
     public float baseFireRate;
     public int maxAmmo;
-    bool hasFired = false;
+    public bool hasFired = false;
 
     [Header("References")]
     public Transform tip;
@@ -68,7 +68,7 @@ public class Gun : MonoBehaviour
                 hitCrate.transform.gameObject.GetComponent<Crate>().health = 0;
             }
 
-            RaycastHit2D particle =  Physics2D.Raycast(tip.position, transform.right, range);
+            RaycastHit2D particle =  Physics2D.Raycast(tip.position, transform.right, range, 1);
 
             if (particle)
                 Instantiate(hitParticle, particle.point, Quaternion.identity);
@@ -78,9 +78,14 @@ public class Gun : MonoBehaviour
         }
     }
 
-    public void RefillAmmo()
+    public void RefillAmmoFull()
     {
         ammo = maxAmmo;
+    }
+
+    public void RefillAmmoAmount(int amount)
+    {
+        ammo = Mathf.Clamp(ammo + amount, 0, maxAmmo);
     }
 
     public IEnumerator SetHasFiredToFalse()

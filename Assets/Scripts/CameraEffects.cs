@@ -6,17 +6,12 @@ public class CameraEffects : MonoBehaviour
     [SerializeField] GameObject BloodObject;
     [SerializeField] Sprite[] bloodSprites;
 
-    void Start()
-    {
-
-    }
-
     public void BloodOnScreen(int times)
     {
         for (int i = 0; i < times; i++)
         {
             GameObject blood = Instantiate(BloodObject, Camera.main.transform);
-            blood.transform.position = new Vector2(Random.Range(-14f, 14), Random.Range(-6f, 6));
+            blood.transform.localPosition = new Vector3 (Random.Range(-14f, 14), Random.Range(-6f, 6), 1);
             blood.transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
 
             blood.GetComponent<SpriteRenderer>().sprite = bloodSprites[Random.Range(0, bloodSprites.Length)];

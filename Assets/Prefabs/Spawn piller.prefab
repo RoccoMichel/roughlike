@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2474850970052898831, guid: b71338d9075fabe499d8b114a1657400, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPlayerDist: 5
   spawnFrequency: 5
+  maxSpawnDist: 0
   numberOfEnemySpawning: 2
   enemys:
   - {fileID: 896797613083381243, guid: fd51db03c94966e4985bdb650eb1e0d5, type: 3}
@@ -125,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  drops: []
+  dekurenzi: {fileID: 0}
   damageTextObj: {fileID: 7750455506941791679, guid: 802c0bf139ba2e44baf3798e7150d23c, type: 3}
   bigDamage: {r: 0.7584905, g: 0.0787112, b: 0.0787112, a: 1}
   medeumDamage: {r: 0.7132075, g: 0.70358926, b: 0.10092549, a: 1}

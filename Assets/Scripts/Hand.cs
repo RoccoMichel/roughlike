@@ -27,5 +27,12 @@ public class Hand : MonoBehaviour
         pos.x = Mathf.Cos(Mathf.Atan2(der.y, der.x)) * distens;
 
         transform.position = player.position + pos;
+
+        transform.localScale = new Vector3
+        {
+            x = transform.localScale.x,
+            y = transform.localPosition.x > 0 ? Mathf.Abs(transform.localScale.y) : -Mathf.Abs(transform.localScale.y),
+            z = transform.localScale.z
+        };
     }
 }

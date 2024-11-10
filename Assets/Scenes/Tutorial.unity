@@ -276,7 +276,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &21332923
 RectTransform:
@@ -294,7 +294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 226.37, y: -5.54}
+  m_AnchoredPosition: {x: 225.69, y: -3.27}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &26058580
@@ -577,7 +577,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &158307820
 RectTransform:
@@ -595,7 +595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67, y: -6.6}
+  m_AnchoredPosition: {x: 67, y: -3.65}
   m_SizeDelta: {x: 9.8179, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &173463152
@@ -812,7 +812,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &202111462
 RectTransform:
@@ -988,7 +988,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &211715399
 RectTransform:
@@ -1006,7 +1006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117.52227, y: -7.2}
+  m_AnchoredPosition: {x: 117.52227, y: -3.51}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &273102298
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buy the asasult rifle in the equipment tab
+  m_text: Buy the laser rifle in the equipment tab
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -1434,7 +1434,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &319059501
 RectTransform:
@@ -1452,7 +1452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 126.95, y: 5.62}
+  m_AnchoredPosition: {x: 129.18, y: 5.05}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &342489198
@@ -1610,7 +1610,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &342489201
 RectTransform:
@@ -1911,23 +1911,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3701842687564110078, guid: f44b9b447b5b18f45ae4fe0fe71c74f9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.8608
+      value: 0.59598
       objectReference: {fileID: 0}
     - target: {fileID: 3701842687564110078, guid: f44b9b447b5b18f45ae4fe0fe71c74f9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.8608
+      value: 0.59598
       objectReference: {fileID: 0}
     - target: {fileID: 3701842687564110078, guid: f44b9b447b5b18f45ae4fe0fe71c74f9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.8608
+      value: 0.59598
       objectReference: {fileID: 0}
     - target: {fileID: 3701842687564110078, guid: f44b9b447b5b18f45ae4fe0fe71c74f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 141.7
+      value: 142.8
       objectReference: {fileID: 0}
     - target: {fileID: 3701842687564110078, guid: f44b9b447b5b18f45ae4fe0fe71c74f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 3701842687564110078, guid: f44b9b447b5b18f45ae4fe0fe71c74f9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1996,7 +1996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5113770519154280154, guid: 17b87d84dceca1949b8a253953e9fd32, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -16.6
       objectReference: {fileID: 0}
     - target: {fileID: 5113770519154280154, guid: 17b87d84dceca1949b8a253953e9fd32, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2561,7 +2561,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &774255725
 RectTransform:
@@ -2579,7 +2579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 208.3, y: 7.6}
+  m_AnchoredPosition: {x: 201.84, y: 5.67}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &804329601
@@ -2794,7 +2794,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &824902362
 RectTransform:
@@ -2812,7 +2812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 227.1, y: 5.1}
+  m_AnchoredPosition: {x: 224.36, y: 5.54}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &878886083
@@ -3058,7 +3058,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &963254219
 RectTransform:
@@ -3076,7 +3076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.9, y: 8.1}
+  m_AnchoredPosition: {x: 56.2, y: 5.43}
   m_SizeDelta: {x: 9.8179, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &963844910
@@ -3093,11 +3093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6927371495338160696, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6927371495338160696, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 6927371495338160696, guid: 6df934cf09e5e554092eef4965e77a67, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3435,7 +3435,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1101398279
 RectTransform:
@@ -3453,7 +3453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31.2, y: -8}
+  m_AnchoredPosition: {x: 31.2, y: -3.56}
   m_SizeDelta: {x: 9.8179, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1201528474
@@ -4214,7 +4214,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1474618037
 RectTransform:
@@ -4232,7 +4232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 277.40216, y: 7.64}
+  m_AnchoredPosition: {x: 277.53, y: 6.4}
   m_SizeDelta: {x: 18.9067, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1579659886
@@ -4392,7 +4392,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1579659889
 RectTransform:
@@ -4410,7 +4410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170.65, y: -7.2}
+  m_AnchoredPosition: {x: 170.65, y: -3.57}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1582503001
@@ -4570,7 +4570,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1582503004
 RectTransform:
@@ -4588,7 +4588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278.23685, y: -5.54}
+  m_AnchoredPosition: {x: 277.12, y: -3.65}
   m_SizeDelta: {x: 20.5761, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1633479025
@@ -4629,7 +4629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Flashlightdrains Battery
+  m_text: 'Flashlight drains Battery
 
     (top right)'
   m_isRightToLeft: 0
@@ -4748,7 +4748,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1633479028
 RectTransform:
@@ -4766,7 +4766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.85, y: -7.9207}
+  m_AnchoredPosition: {x: 19.85, y: -3.4807}
   m_SizeDelta: {x: 9.8179, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1700394724
@@ -5046,7 +5046,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1754338560
 RectTransform:
@@ -5064,7 +5064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220, y: 7.7}
+  m_AnchoredPosition: {x: 213.1, y: 5.65}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1875501691
@@ -5222,7 +5222,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1875501694
 RectTransform:
@@ -5240,7 +5240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101.5, y: 8.6}
+  m_AnchoredPosition: {x: 99.45, y: 5.43}
   m_SizeDelta: {x: 9.8179, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1943188049
@@ -5400,7 +5400,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1943188052
 RectTransform:
@@ -5418,7 +5418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 155.2, y: -7.2}
+  m_AnchoredPosition: {x: 158.24, y: -3.63}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1947491450
@@ -5576,7 +5576,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1947491453
 RectTransform:
@@ -5594,7 +5594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 249.5, y: 5.1}
+  m_AnchoredPosition: {x: 248.88, y: 5.85}
   m_SizeDelta: {x: 12.8624, y: 2.6402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2050200409
@@ -5943,7 +5943,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &2111072639
 RectTransform:
@@ -5953,7 +5953,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111072636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

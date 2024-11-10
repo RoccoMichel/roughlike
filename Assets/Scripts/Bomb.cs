@@ -16,6 +16,8 @@ public class Bomb : MonoBehaviour
     private void Awake()
     {
         enemyPos = GameObject.FindGameObjectsWithTag("Enemy");
+
+        transform.localScale = Vector3.one / 10;
     }
 
     void Update()

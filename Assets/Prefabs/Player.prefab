@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5259094256149292007}
   - component: {fileID: 8368752900238171161}
   - component: {fileID: 9156159291927064067}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Collider
   m_TagString: EnemyStop
   m_Icon: {fileID: 0}

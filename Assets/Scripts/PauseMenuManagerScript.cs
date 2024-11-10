@@ -11,7 +11,7 @@ public class PauseMenuManagerScript : MonoBehaviour
         {
             Resume();
         }
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(pauseKey))
         {
             Pause();
         }
