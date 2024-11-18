@@ -1711,9 +1711,9 @@ RectTransform:
   m_Children:
   - {fileID: 3637015872711615748}
   - {fileID: 3932664447493920018}
-  - {fileID: 4459651012237777164}
   - {fileID: 955346917827445004}
   - {fileID: 3583356102046741179}
+  - {fileID: 4459651012237777164}
   m_Father: {fileID: 8820340379837760578}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -1761,7 +1761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 6}
+  m_AnchoredPosition: {x: 0, y: 69.7}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5339356817822105903
@@ -1794,7 +1794,7 @@ MonoBehaviour:
   name: Laser Rifle
   maxCount: 1
   count: 0
-  price: 2000
+  price: 1900
   priceScaling: 1
   currency: 0
   player: {fileID: 0}
@@ -2469,7 +2469,7 @@ MonoBehaviour:
   name: Damage upgrade
   maxCount: 100
   count: 0
-  price: 300
+  price: 200
   priceScaling: 1.1
   currency: 0
   player: {fileID: 0}
@@ -2844,7 +2844,7 @@ MonoBehaviour:
   name: 
   maxCount: 0
   count: 0
-  price: 2400
+  price: 500
   priceScaling: 1
   currency: 0
   player: {fileID: 0}
@@ -3583,10 +3583,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5280955375421031690}
-  - {fileID: 3284680642252934831}
   - {fileID: 1438647091314950863}
   - {fileID: 3757194359351529481}
   - {fileID: 6268392119976359909}
+  - {fileID: 3284680642252934831}
   m_Father: {fileID: 8352163166688655573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -5389,7 +5389,7 @@ MonoBehaviour:
   name: 
   maxCount: 0
   count: 0
-  price: 2400
+  price: 500
   priceScaling: 1
   currency: 0
   player: {fileID: 0}
@@ -6979,7 +6979,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -120}
+  m_AnchoredPosition: {x: 0, y: -59.100006}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8250995326304641149
@@ -7012,7 +7012,7 @@ MonoBehaviour:
   name: Battery
   maxCount: 5
   count: 0
-  price: 1000
+  price: 800
   priceScaling: 1.5
   currency: 0
   player: {fileID: 0}
@@ -8682,7 +8682,7 @@ MonoBehaviour:
   name: Grenade
   maxCount: 1
   count: 0
-  price: 300
+  price: 1000
   priceScaling: 1
   currency: 0
   player: {fileID: 0}
@@ -9991,7 +9991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 69}
+  m_AnchoredPosition: {x: 0, y: -57.132828}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727592548171845458
@@ -10537,7 +10537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -57}
+  m_AnchoredPosition: {x: 0, y: 3.899994}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038995559234736332
@@ -11045,7 +11045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 6}
+  m_AnchoredPosition: {x: 0, y: -122.6}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7890277065236178736
@@ -11078,7 +11078,7 @@ MonoBehaviour:
   name: Piercing
   maxCount: 3
   count: 0
-  price: 2000
+  price: 1000
   priceScaling: 2.5
   currency: 0
   player: {fileID: 0}
@@ -14586,7 +14586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -121.000015}
+  m_AnchoredPosition: {x: 0, y: -121}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196919321298291239
@@ -14619,7 +14619,7 @@ MonoBehaviour:
   name: Railgun
   maxCount: 1
   count: 0
-  price: 4000
+  price: 2500
   priceScaling: 1
   currency: 0
   player: {fileID: 0}
@@ -15584,7 +15584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -57}
+  m_AnchoredPosition: {x: 0, y: 6.699997}
   m_SizeDelta: {x: 484.6133, y: 74.8822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575703808069686407
@@ -15617,7 +15617,7 @@ MonoBehaviour:
   name: Uzi
   maxCount: 1
   count: 0
-  price: 3000
+  price: 1900
   priceScaling: 1
   currency: 0
   player: {fileID: 0}

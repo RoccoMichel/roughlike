@@ -60,6 +60,8 @@ public class Upgrade : MonoBehaviour
         }
         else if (currency == PriceTypes.jubs)
         {
+            price = Mathf.CeilToInt(price * priceScaling * Mathf.Clamp(GetComponent<PurchaseItem>().JubUpgradeCount(), 1, int.MaxValue));
+
             priceText.text = $"@{price}";
             count = GetComponent<PurchaseItem>().JubUpgradeCount();
 

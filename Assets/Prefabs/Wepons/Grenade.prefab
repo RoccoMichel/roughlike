@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9999
   m_Sprite: {fileID: 21300000, guid: b2646fe7c32e3594aab2ad68d375055f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   range: 2.5
   baseFireRate: 0
   maxAmmo: 10
+  hasFired: 0
   tip: {fileID: 0}
   muzzleFlash: {fileID: 0}
   hitParticle: {fileID: 0}

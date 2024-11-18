@@ -47,15 +47,15 @@ public class PurchaseItem : MonoBehaviour
             case Purchases.AmmoFull:
                 inventory.RefillAllAmmo(); break;
             case Purchases.Grenade:
-                inventory.UnlockGun(5); break; //
+                inventory.UnlockGun(5); break;
             case Purchases.LazerGun:
-                inventory.UnlockGun(3); break; //
+                inventory.UnlockGun(3); break;
             case Purchases.SniperGun:
-                inventory.UnlockGun(4); break; //
+                inventory.UnlockGun(4); break;
             case Purchases.UziGun:
-                inventory.UnlockGun(2); break; //
+                inventory.UnlockGun(2); break;
             case Purchases.ARGun:
-                inventory.UnlockGun(1); break; //
+                inventory.UnlockGun(1); break;
 
             // Jubs
             case Purchases.SpeedUpgrade:
@@ -65,9 +65,9 @@ public class PurchaseItem : MonoBehaviour
             case Purchases.BiggerFlashlight:
                 player.FlashLightSizeUpgrade(); break;
             case Purchases.MoreEnemies:
-                player.IncreaseEnemiesUpgrade(); break; // Variable isn't used anywhere YET
+                player.IncreaseEnemiesUpgrade(); break;
             case Purchases.LessEnemies:
-                player.IncreaseEnemiesUpgrade(); break; // Variable isn't used anywhere YET
+                player.IncreaseEnemiesUpgrade(); break;
         }
 
         GetComponent<Upgrade>().Purchase();

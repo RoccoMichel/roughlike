@@ -138,13 +138,14 @@ MonoBehaviour:
   range: 20
   baseFireRate: 0.75
   maxAmmo: 25
+  hasFired: 0
   tip: {fileID: 2177731547045524439}
   muzzleFlash: {fileID: 6674308412064882718, guid: 714519d6a41dd684c91cd89ed79b1e57, type: 3}
   hitParticle: {fileID: 2184843398905789289, guid: 1be57106fd0a38c4eb7f61aef7259405, type: 3}
   p: {fileID: 0}
   enemy:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   create:
     serializedVersion: 2
     m_Bits: 128
