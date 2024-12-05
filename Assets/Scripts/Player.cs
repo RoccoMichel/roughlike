@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
         else
         {
             if (Input.GetKeyDown(FlashlightKey) && battery > 10) usingFlashlight = true;
-            battery += Time.deltaTime * 16;
+            battery += Time.deltaTime * 14;
         }
         FlashLight.SetActive(usingFlashlight);
 
